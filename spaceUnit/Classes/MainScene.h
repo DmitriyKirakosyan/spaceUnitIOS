@@ -3,7 +3,7 @@
 
 #include "cocos2d.h"
 
-class Main : public cocos2d::CCLayer
+class Main : public cocos2d::CCLayerColor
 {
 public:
     // Method 'init' in cocos2d-x returns bool, instead of 'id' in cocos2d-iphone (an object pointer)

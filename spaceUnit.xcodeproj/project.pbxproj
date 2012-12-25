@@ -202,6 +202,19 @@
 		2C78EDAF168A10E600CFA337 /* HttpClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C78EDAE168A10E600CFA337 /* HttpClient.cpp */; };
 		2C78EDB8168A10E600CFA337 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C78EDB7168A10E600CFA337 /* AppDelegate.cpp */; };
 		2C78EDBB168A10E600CFA337 /* MainScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C78EDBA168A10E600CFA337 /* MainScene.cpp */; };
+		2C78EDD2168A134B00CFA337 /* EnemyView_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C78EDC5168A134B00CFA337 /* EnemyView_2.png */; };
+		2C78EDD3168A134B00CFA337 /* EnemyView.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C78EDC6168A134B00CFA337 /* EnemyView.png */; };
+		2C78EDD4168A134B00CFA337 /* PlanetView.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C78EDC7168A134B00CFA337 /* PlanetView.png */; };
+		2C78EDD5168A134B00CFA337 /* PlayBtnRun_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C78EDC8168A134B00CFA337 /* PlayBtnRun_1.png */; };
+		2C78EDD6168A134B00CFA337 /* PlayBtnRun_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C78EDC9168A134B00CFA337 /* PlayBtnRun_2.png */; };
+		2C78EDD7168A134B00CFA337 /* PlayBtnShoot_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C78EDCA168A134B00CFA337 /* PlayBtnShoot_1.png */; };
+		2C78EDD8168A134B00CFA337 /* PlayBtnShoot_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C78EDCB168A134B00CFA337 /* PlayBtnShoot_2.png */; };
+		2C78EDD9168A134B00CFA337 /* SaturnView.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C78EDCC168A134B00CFA337 /* SaturnView.png */; };
+		2C78EDDA168A134B00CFA337 /* ShipView.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C78EDCD168A134B00CFA337 /* ShipView.png */; };
+		2C78EDDB168A134B00CFA337 /* SimpleBulletView.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C78EDCE168A134B00CFA337 /* SimpleBulletView.png */; };
+		2C78EDDC168A134B00CFA337 /* Star_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C78EDCF168A134B00CFA337 /* Star_1.png */; };
+		2C78EDDD168A134B00CFA337 /* Star_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C78EDD0168A134B00CFA337 /* Star_2.png */; };
+		2C78EDDE168A134B00CFA337 /* Star_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C78EDD1168A134B00CFA337 /* Star_3.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -634,6 +647,19 @@
 		2C78EDB7168A10E600CFA337 /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
 		2C78EDB9168A10E600CFA337 /* MainScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainScene.h; path = Classes/MainScene.h; sourceTree = "<group>"; };
 		2C78EDBA168A10E600CFA337 /* MainScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = MainScene.cpp; path = Classes/MainScene.cpp; sourceTree = "<group>"; };
+		2C78EDC5168A134B00CFA337 /* EnemyView_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = EnemyView_2.png; path = Resources/EnemyView_2.png; sourceTree = "<group>"; };
+		2C78EDC6168A134B00CFA337 /* EnemyView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = EnemyView.png; path = Resources/EnemyView.png; sourceTree = "<group>"; };
+		2C78EDC7168A134B00CFA337 /* PlanetView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PlanetView.png; path = Resources/PlanetView.png; sourceTree = "<group>"; };
+		2C78EDC8168A134B00CFA337 /* PlayBtnRun_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PlayBtnRun_1.png; path = Resources/PlayBtnRun_1.png; sourceTree = "<group>"; };
+		2C78EDC9168A134B00CFA337 /* PlayBtnRun_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PlayBtnRun_2.png; path = Resources/PlayBtnRun_2.png; sourceTree = "<group>"; };
+		2C78EDCA168A134B00CFA337 /* PlayBtnShoot_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PlayBtnShoot_1.png; path = Resources/PlayBtnShoot_1.png; sourceTree = "<group>"; };
+		2C78EDCB168A134B00CFA337 /* PlayBtnShoot_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PlayBtnShoot_2.png; path = Resources/PlayBtnShoot_2.png; sourceTree = "<group>"; };
+		2C78EDCC168A134B00CFA337 /* SaturnView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SaturnView.png; path = Resources/SaturnView.png; sourceTree = "<group>"; };
+		2C78EDCD168A134B00CFA337 /* ShipView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ShipView.png; path = Resources/ShipView.png; sourceTree = "<group>"; };
+		2C78EDCE168A134B00CFA337 /* SimpleBulletView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SimpleBulletView.png; path = Resources/SimpleBulletView.png; sourceTree = "<group>"; };
+		2C78EDCF168A134B00CFA337 /* Star_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Star_1.png; path = Resources/Star_1.png; sourceTree = "<group>"; };
+		2C78EDD0168A134B00CFA337 /* Star_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Star_2.png; path = Resources/Star_2.png; sourceTree = "<group>"; };
+		2C78EDD1168A134B00CFA337 /* Star_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Star_3.png; path = Resources/Star_3.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -703,6 +729,19 @@
 		2C78EB2A168A10E300CFA337 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2C78EDC5168A134B00CFA337 /* EnemyView_2.png */,
+				2C78EDC6168A134B00CFA337 /* EnemyView.png */,
+				2C78EDC7168A134B00CFA337 /* PlanetView.png */,
+				2C78EDC8168A134B00CFA337 /* PlayBtnRun_1.png */,
+				2C78EDC9168A134B00CFA337 /* PlayBtnRun_2.png */,
+				2C78EDCA168A134B00CFA337 /* PlayBtnShoot_1.png */,
+				2C78EDCB168A134B00CFA337 /* PlayBtnShoot_2.png */,
+				2C78EDCC168A134B00CFA337 /* SaturnView.png */,
+				2C78EDCD168A134B00CFA337 /* ShipView.png */,
+				2C78EDCE168A134B00CFA337 /* SimpleBulletView.png */,
+				2C78EDCF168A134B00CFA337 /* Star_1.png */,
+				2C78EDD0168A134B00CFA337 /* Star_2.png */,
+				2C78EDD1168A134B00CFA337 /* Star_3.png */,
 				2C78EB2B168A10E300CFA337 /* CloseNormal.png */,
 				2C78EB2D168A10E300CFA337 /* CloseSelected.png */,
 				2C78EB2F168A10E300CFA337 /* Default.png */,
@@ -1585,6 +1624,19 @@
 				2C78EB3E168A10E300CFA337 /* Icon@2x.png in Resources */,
 				2C78EB40168A10E300CFA337 /* iTunesArtwork in Resources */,
 				2C78EBD2168A10E300CFA337 /* ChangeLog in Resources */,
+				2C78EDD2168A134B00CFA337 /* EnemyView_2.png in Resources */,
+				2C78EDD3168A134B00CFA337 /* EnemyView.png in Resources */,
+				2C78EDD4168A134B00CFA337 /* PlanetView.png in Resources */,
+				2C78EDD5168A134B00CFA337 /* PlayBtnRun_1.png in Resources */,
+				2C78EDD6168A134B00CFA337 /* PlayBtnRun_2.png in Resources */,
+				2C78EDD7168A134B00CFA337 /* PlayBtnShoot_1.png in Resources */,
+				2C78EDD8168A134B00CFA337 /* PlayBtnShoot_2.png in Resources */,
+				2C78EDD9168A134B00CFA337 /* SaturnView.png in Resources */,
+				2C78EDDA168A134B00CFA337 /* ShipView.png in Resources */,
+				2C78EDDB168A134B00CFA337 /* SimpleBulletView.png in Resources */,
+				2C78EDDC168A134B00CFA337 /* Star_1.png in Resources */,
+				2C78EDDD168A134B00CFA337 /* Star_2.png in Resources */,
+				2C78EDDE168A134B00CFA337 /* Star_3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
