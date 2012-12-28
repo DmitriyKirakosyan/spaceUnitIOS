@@ -12,8 +12,18 @@ public:
     // there's no 'id' in cpp, so we recommend to return the class instance pointer
     static cocos2d::CCScene* scene();
     
+private:
+    
+    void createBackObjecs();
+    
     // a selector callback
     void menuCloseCallback(CCObject* pSender);
+    
+    void onPlayBtnRunClick(CCObject* pSender);
+    void onPlayBtnShootClick(CCObject* pSender);
+    
+    cocos2d::CCArray* _staticObjects;
+    cocos2d::CCArray* _movingObjects;
 
     // preprocessor macro for "static create()" constructor ( node() deprecated )
     CREATE_FUNC(Main);
