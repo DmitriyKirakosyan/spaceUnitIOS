@@ -14,6 +14,8 @@ public:
     
 private:
     
+    void update(cocos2d::CCTime dt);
+    
     void createBackObjecs();
     
     // a selector callback
@@ -24,6 +26,10 @@ private:
     
     cocos2d::CCArray* _staticObjects;
     cocos2d::CCArray* _movingObjects;
+    
+    static const int MAX_STATIC_OBJECTS;
+    static const int MAX_MOVING_OBJECTS;
+    static const int MIN_MOVING_OBJECTS;
 
     // preprocessor macro for "static create()" constructor ( node() deprecated )
     CREATE_FUNC(Main);

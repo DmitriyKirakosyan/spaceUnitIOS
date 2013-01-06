@@ -215,6 +215,12 @@
 		2C78EDDC168A134B00CFA337 /* Star_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C78EDCF168A134B00CFA337 /* Star_1.png */; };
 		2C78EDDD168A134B00CFA337 /* Star_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C78EDD0168A134B00CFA337 /* Star_2.png */; };
 		2C78EDDE168A134B00CFA337 /* Star_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C78EDD1168A134B00CFA337 /* Star_3.png */; };
+		2C78EDE8168F71D700CFA337 /* Enemy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C78EDE6168F71D700CFA337 /* Enemy.cpp */; };
+		2C78EDEB168FAB6600CFA337 /* SpaceObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C78EDEA168FAB6600CFA337 /* SpaceObject.cpp */; };
+		2C78EDEE16921B5500CFA337 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C78EDEC16921B5400CFA337 /* GameScene.cpp */; };
+		2C78EDF51693B32C00CFA337 /* MovingSpaceObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C78EDF31693B32C00CFA337 /* MovingSpaceObject.cpp */; };
+		2C78EDF81693B4FB00CFA337 /* Ship.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C78EDF61693B4FA00CFA337 /* Ship.cpp */; };
+		2CA493871695E1B40066A57B /* GameRunStrategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CA493851695E1B40066A57B /* GameRunStrategy.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -660,6 +666,19 @@
 		2C78EDCF168A134B00CFA337 /* Star_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Star_1.png; path = Resources/Star_1.png; sourceTree = "<group>"; };
 		2C78EDD0168A134B00CFA337 /* Star_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Star_2.png; path = Resources/Star_2.png; sourceTree = "<group>"; };
 		2C78EDD1168A134B00CFA337 /* Star_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Star_3.png; path = Resources/Star_3.png; sourceTree = "<group>"; };
+		2C78EDE6168F71D700CFA337 /* Enemy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Enemy.cpp; path = Classes/Enemy.cpp; sourceTree = "<group>"; };
+		2C78EDE7168F71D700CFA337 /* Enemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Enemy.h; path = Classes/Enemy.h; sourceTree = "<group>"; };
+		2C78EDE9168F8CB500CFA337 /* SpaceObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SpaceObject.h; path = Classes/SpaceObject.h; sourceTree = "<group>"; };
+		2C78EDEA168FAB6600CFA337 /* SpaceObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SpaceObject.cpp; path = Classes/SpaceObject.cpp; sourceTree = "<group>"; };
+		2C78EDEC16921B5400CFA337 /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameScene.cpp; path = Classes/GameScene.cpp; sourceTree = "<group>"; };
+		2C78EDED16921B5400CFA337 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameScene.h; path = Classes/GameScene.h; sourceTree = "<group>"; };
+		2C78EDF31693B32C00CFA337 /* MovingSpaceObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MovingSpaceObject.cpp; path = Classes/MovingSpaceObject.cpp; sourceTree = "<group>"; };
+		2C78EDF41693B32C00CFA337 /* MovingSpaceObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MovingSpaceObject.h; path = Classes/MovingSpaceObject.h; sourceTree = "<group>"; };
+		2C78EDF61693B4FA00CFA337 /* Ship.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Ship.cpp; path = Classes/Ship.cpp; sourceTree = "<group>"; };
+		2C78EDF71693B4FB00CFA337 /* Ship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Ship.h; path = Classes/Ship.h; sourceTree = "<group>"; };
+		2CA493841695D6BB0066A57B /* GameStrategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GameStrategy.h; path = Classes/GameStrategy.h; sourceTree = "<group>"; };
+		2CA493851695E1B40066A57B /* GameRunStrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameRunStrategy.cpp; path = Classes/GameRunStrategy.cpp; sourceTree = "<group>"; };
+		2CA493861695E1B40066A57B /* GameRunStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameRunStrategy.h; path = Classes/GameRunStrategy.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1554,12 +1573,49 @@
 		2C78EDB5168A10E600CFA337 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2C78EDE4168F71B700CFA337 /* game */,
 				2C78EDB6168A10E600CFA337 /* AppDelegate.h */,
 				2C78EDB7168A10E600CFA337 /* AppDelegate.cpp */,
 				2C78EDB9168A10E600CFA337 /* MainScene.h */,
 				2C78EDBA168A10E600CFA337 /* MainScene.cpp */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		2C78EDE4168F71B700CFA337 /* game */ = {
+			isa = PBXGroup;
+			children = (
+				2CA493821695D69E0066A57B /* strategy */,
+				2C78EDE5168F71BD00CFA337 /* mapObjects */,
+				2C78EDEC16921B5400CFA337 /* GameScene.cpp */,
+				2C78EDED16921B5400CFA337 /* GameScene.h */,
+			);
+			name = game;
+			sourceTree = "<group>";
+		};
+		2C78EDE5168F71BD00CFA337 /* mapObjects */ = {
+			isa = PBXGroup;
+			children = (
+				2C78EDE6168F71D700CFA337 /* Enemy.cpp */,
+				2C78EDE7168F71D700CFA337 /* Enemy.h */,
+				2C78EDE9168F8CB500CFA337 /* SpaceObject.h */,
+				2C78EDEA168FAB6600CFA337 /* SpaceObject.cpp */,
+				2C78EDF31693B32C00CFA337 /* MovingSpaceObject.cpp */,
+				2C78EDF41693B32C00CFA337 /* MovingSpaceObject.h */,
+				2C78EDF61693B4FA00CFA337 /* Ship.cpp */,
+				2C78EDF71693B4FB00CFA337 /* Ship.h */,
+			);
+			name = mapObjects;
+			sourceTree = "<group>";
+		};
+		2CA493821695D69E0066A57B /* strategy */ = {
+			isa = PBXGroup;
+			children = (
+				2CA493841695D6BB0066A57B /* GameStrategy.h */,
+				2CA493851695E1B40066A57B /* GameRunStrategy.cpp */,
+				2CA493861695E1B40066A57B /* GameRunStrategy.h */,
+			);
+			name = strategy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1821,6 +1877,12 @@
 				2C78EDAF168A10E600CFA337 /* HttpClient.cpp in Sources */,
 				2C78EDB8168A10E600CFA337 /* AppDelegate.cpp in Sources */,
 				2C78EDBB168A10E600CFA337 /* MainScene.cpp in Sources */,
+				2C78EDE8168F71D700CFA337 /* Enemy.cpp in Sources */,
+				2C78EDEB168FAB6600CFA337 /* SpaceObject.cpp in Sources */,
+				2C78EDEE16921B5500CFA337 /* GameScene.cpp in Sources */,
+				2C78EDF51693B32C00CFA337 /* MovingSpaceObject.cpp in Sources */,
+				2C78EDF81693B4FB00CFA337 /* Ship.cpp in Sources */,
+				2CA493871695E1B40066A57B /* GameRunStrategy.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1952,6 +2014,7 @@
 				2C78EDC0168A10E600CFA337 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
