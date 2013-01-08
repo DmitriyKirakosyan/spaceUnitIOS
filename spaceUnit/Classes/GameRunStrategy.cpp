@@ -33,8 +33,7 @@ void GameRunStrategy::tick()
     if (_enemies != NULL)
     {
         this->checkEnemyHits();
-    }
-    
+    }    
 }
 
 void GameRunStrategy::createEnemy()
@@ -83,12 +82,6 @@ void GameRunStrategy::checkEnemyHits()
     {
         this->explodeEnemy((CCSprite*) item);
     }
-}
-
-void GameRunStrategy::explodeEnemy(CCSprite* enemy)
-{
-    enemy->setOpacity(100);
-    _enemies->removeObject(enemy);
 }
 
 

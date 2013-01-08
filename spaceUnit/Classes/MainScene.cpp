@@ -53,7 +53,8 @@ bool Main::init()
                                                           "PlayBtnRun_2.png",
                                                           this,
                                                           menu_selector(Main::onPlayBtnRunClick) );
-    playBtnRun->setPosition( ccp(winSize.width/2 - playBtnRun->getContentSize().width/2 - 20, winSize.height/2) );
+    playBtnRun->setPosition( ccp(winSize.width/2 - playBtnRun->getContentSize().width - 20, winSize.height/2) );
+    playBtnRun->setScale(2.0f);
 
     //кнопка старта игры типа "стрельба"
     CCMenuItemImage *playBtnShoot = CCMenuItemImage::create(
@@ -61,7 +62,8 @@ bool Main::init()
                                                           "PlayBtnShoot_2.png",
                                                           this,
                                                           menu_selector(Main::onPlayBtnShootClick) );
-    playBtnShoot->setPosition( ccp(winSize.width/2 + playBtnShoot->getContentSize().width/2 + 20, winSize.height/2) );
+    playBtnShoot->setPosition( ccp(winSize.width/2 + playBtnShoot->getContentSize().width + 20, winSize.height/2) );
+    playBtnShoot->setScale(2.0f);
 
     // create menu, it's an autorelease object
     CCMenu* pMenu = CCMenu::create(pCloseItem, playBtnRun, playBtnShoot, NULL);
@@ -138,5 +140,6 @@ void Main::onPlayBtnRunClick(CCObject* pSender)
 
 void Main::onPlayBtnShootClick(CCObject* pSender)
 {
-    
+    GameScene* gameScene = GameScene::create(GameScene::SHOOT_GAME);
+    CCDirector::sharedDirector()->replaceScene(gameScene);
 }

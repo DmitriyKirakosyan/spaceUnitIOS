@@ -26,7 +26,13 @@ protected:
     cocos2d::CCArray* _enemies;
     Ship* _ship;
     cocos2d::CCNode* _screenContainer;
-    
+
+    virtual void explodeEnemy(cocos2d::CCSprite* enemy)
+    {
+        enemy->setOpacity(100);
+        _enemies->removeObject(enemy);
+    }
+
 private:
     virtual void createEnemy() = 0;
 

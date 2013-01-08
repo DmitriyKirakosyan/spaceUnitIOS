@@ -221,6 +221,7 @@
 		2C78EDF51693B32C00CFA337 /* MovingSpaceObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C78EDF31693B32C00CFA337 /* MovingSpaceObject.cpp */; };
 		2C78EDF81693B4FB00CFA337 /* Ship.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C78EDF61693B4FA00CFA337 /* Ship.cpp */; };
 		2CA493871695E1B40066A57B /* GameRunStrategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CA493851695E1B40066A57B /* GameRunStrategy.cpp */; };
+		2CA4938A169CBA3E0066A57B /* GameShootStrategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CA49388169CBA3E0066A57B /* GameShootStrategy.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -679,6 +680,8 @@
 		2CA493841695D6BB0066A57B /* GameStrategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GameStrategy.h; path = Classes/GameStrategy.h; sourceTree = "<group>"; };
 		2CA493851695E1B40066A57B /* GameRunStrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameRunStrategy.cpp; path = Classes/GameRunStrategy.cpp; sourceTree = "<group>"; };
 		2CA493861695E1B40066A57B /* GameRunStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameRunStrategy.h; path = Classes/GameRunStrategy.h; sourceTree = "<group>"; };
+		2CA49388169CBA3E0066A57B /* GameShootStrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameShootStrategy.cpp; path = Classes/GameShootStrategy.cpp; sourceTree = "<group>"; };
+		2CA49389169CBA3E0066A57B /* GameShootStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameShootStrategy.h; path = Classes/GameShootStrategy.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1614,6 +1617,8 @@
 				2CA493841695D6BB0066A57B /* GameStrategy.h */,
 				2CA493851695E1B40066A57B /* GameRunStrategy.cpp */,
 				2CA493861695E1B40066A57B /* GameRunStrategy.h */,
+				2CA49388169CBA3E0066A57B /* GameShootStrategy.cpp */,
+				2CA49389169CBA3E0066A57B /* GameShootStrategy.h */,
 			);
 			name = strategy;
 			sourceTree = "<group>";
@@ -1883,6 +1888,7 @@
 				2C78EDF51693B32C00CFA337 /* MovingSpaceObject.cpp in Sources */,
 				2C78EDF81693B4FB00CFA337 /* Ship.cpp in Sources */,
 				2CA493871695E1B40066A57B /* GameRunStrategy.cpp in Sources */,
+				2CA4938A169CBA3E0066A57B /* GameShootStrategy.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

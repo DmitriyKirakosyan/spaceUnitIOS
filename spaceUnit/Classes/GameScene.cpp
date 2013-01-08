@@ -11,6 +11,7 @@
 #include "Enemy.h"
 #include "Ship.h"
 #include "GameRunStrategy.h"
+#include "GameShootStrategy.h"
 
 using namespace cocos2d;
 
@@ -45,7 +46,14 @@ bool GameLayer::init()
         _prevMovingTouch = NULL;
         
         this->createShip();
-        _gameStrategy = new GameRunStrategy(this, _ship);
+        if (_gameType == GameScene::RUN_GAME)
+        {
+            _gameStrategy = new GameRunStrategy(this, _ship);
+        }
+        else
+        {
+            _gameStrategy = new GameShootStrategy(this, _ship);
+        }
         
         CCSize winSize = CCDirector::sharedDirector()->getWinSize();
         

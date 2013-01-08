@@ -26,7 +26,6 @@ private:
 
     void createEnemy();
     void checkEnemyHits();
-    void explodeEnemy(cocos2d::CCSprite* enemy);
 
 };
 
