@@ -18,8 +18,13 @@ class GameStrategy
 public:
     GameStrategy(cocos2d::CCNode* screenContainer, Ship* ship):_ship(ship),_screenContainer(screenContainer) {
         _enemies = NULL;
+        _movingTouch = NULL;
     };
     virtual void tick() = 0;
+    
+    virtual void touchesBegan(cocos2d::CCSet* touches, cocos2d::CCEvent* event) = 0;
+    virtual void touchesEnded(cocos2d::CCSet* touches, cocos2d::CCEvent* event) = 0;
+    virtual void touchesMoved(cocos2d::CCSet* touches, cocos2d::CCEvent* event) = 0;
     
 protected:
     
@@ -27,6 +32,8 @@ protected:
     Ship* _ship;
     cocos2d::CCNode* _screenContainer;
 
+    cocos2d::CCTouch* _movingTouch;
+    
     virtual void explodeEnemy(cocos2d::CCSprite* enemy)
     {
         enemy->setOpacity(100);

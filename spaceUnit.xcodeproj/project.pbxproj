@@ -225,6 +225,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C541E2B16C55CD200182A39 /* Bullet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Bullet.h; path = Classes/Bullet.h; sourceTree = "<group>"; };
 		2C78EB15168A10E200CFA337 /* spaceUnit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = spaceUnit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C78EB19168A10E200CFA337 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		2C78EB1B168A10E200CFA337 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -1607,6 +1608,7 @@
 				2C78EDF41693B32C00CFA337 /* MovingSpaceObject.h */,
 				2C78EDF61693B4FA00CFA337 /* Ship.cpp */,
 				2C78EDF71693B4FB00CFA337 /* Ship.h */,
+				2C541E2B16C55CD200182A39 /* Bullet.h */,
 			);
 			name = mapObjects;
 			sourceTree = "<group>";

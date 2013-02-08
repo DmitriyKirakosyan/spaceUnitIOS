@@ -49,9 +49,6 @@ private:
     
     Ship* _ship;
     
-    cocos2d::CCTouch* _movingTouch;
-    cocos2d::CCTouch* _prevMovingTouch;
-    
     GameStrategy* _gameStrategy;
     
 };

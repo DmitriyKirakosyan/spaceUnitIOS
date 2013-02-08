@@ -42,8 +42,6 @@ bool GameLayer::init()
 {
     if (CCLayerColor::initWithColor(ccc4(255, 255, 255, 255)))
     {
-        _movingTouch = NULL;
-        _prevMovingTouch = NULL;
         
         this->createShip();
         if (_gameType == GameScene::RUN_GAME)
@@ -79,7 +77,7 @@ void GameLayer::createShip()
 {
     if (_ship != NULL) { CCLOGERROR("ship already exists!"); }
     CCSize winSize = CCDirector::sharedDirector()->getWinSize();
-    _ship = new Ship(winSize);
+    _ship = new Ship(winSize, 10);
     _ship->setGeneralSpeed(2);
     _ship->setPosition(ccp(winSize.width/2, winSize.height/2));
     this->addChild(_ship);
@@ -92,31 +90,17 @@ void GameLayer::update(float dt)
 
 void GameLayer::ccTouchesBegan(CCSet* touches, CCEvent* event)
 {
-    if (_movingTouch) { _prevMovingTouch = _movingTouch; }
-    _movingTouch = (CCTouch*) touches->anyObject();
-    _ship->setMoving(true);
+    _gameStrategy->touchesBegan(touches, event);
 }
 
 void GameLayer::ccTouchesEnded(CCSet* touches, CCEvent* event)
 {
-    CCTouch* touch;
-    for (CCSetIterator iterator = touches->begin(); iterator != touches->end(); iterator++) {
-        touch = (CCTouch*) *iterator;
-        if (touch == _prevMovingTouch) { _prevMovingTouch = NULL; }
-        if (touch == _movingTouch)
-        {
-            _movingTouch = _prevMovingTouch;
-        }
-    }
-    _ship->setMoving(_movingTouch != NULL);
+    _gameStrategy->touchesEnded(touches, event);
 }
 
 void GameLayer::ccTouchesMoved(CCSet* touches, CCEvent* event)
 {
-    CCTouch* touch = (CCTouch*) touches->anyObject();
-    CCPoint location = touch->getLocationInView();
-    location = CCDirector::sharedDirector()->convertToGL(location);
-    _ship->setTargetPosition(location);
+    _gameStrategy->touchesMoved(touches, event);
 }
 
 void GameLayer::onCloseBtnClick(CCNode* node)

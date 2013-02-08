@@ -17,12 +17,19 @@ class CCNode;
 class GameRunStrategy : public GameStrategy
 {
 public:
-    GameRunStrategy(cocos2d::CCNode* screenContainer, Ship* ship):GameStrategy(screenContainer, ship) {};
+    GameRunStrategy(cocos2d::CCNode* screenContainer, Ship* ship):GameStrategy(screenContainer, ship) {
+        _prevMovingTouch = NULL;
+    };
     
     void tick();
-    
+
+    void touchesBegan(cocos2d::CCSet* touches, cocos2d::CCEvent* event);
+    void touchesEnded(cocos2d::CCSet* touches, cocos2d::CCEvent* event);
+    void touchesMoved(cocos2d::CCSet* touches, cocos2d::CCEvent* event);
     
 private:
+
+    cocos2d::CCTouch* _prevMovingTouch;
 
     void createEnemy();
     void checkEnemyHits();

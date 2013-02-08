@@ -85,4 +85,37 @@ void GameRunStrategy::checkEnemyHits()
 }
 
 
+void GameRunStrategy::touchesBegan(CCSet* touches, CCEvent* event)
+{
+    if (_movingTouch) { _prevMovingTouch = _movingTouch; }
+    _movingTouch = (CCTouch*) touches->anyObject();
+    CCPoint location = _movingTouch->getLocationInView();
+    location = CCDirector::sharedDirector()->convertToGL(location);
+    _ship->setTargetPosition(location);
+    _ship->setMoving(true);
+}
+
+void GameRunStrategy::touchesEnded(CCSet* touches, CCEvent* event)
+{
+    CCTouch* touch;
+    for (CCSetIterator iterator = touches->begin(); iterator != touches->end(); iterator++) {
+        touch = (CCTouch*) *iterator;
+        if (touch == _prevMovingTouch) { _prevMovingTouch = NULL; }
+        if (touch == _movingTouch)
+        {
+            _movingTouch = _prevMovingTouch;
+        }
+    }
+    _ship->setMoving(_movingTouch != NULL);
+}
+
+void GameRunStrategy::touchesMoved(CCSet* touches, CCEvent* event)
+{
+    CCPoint location = _movingTouch->getLocationInView();
+    location = CCDirector::sharedDirector()->convertToGL(location);
+    _ship->setTargetPosition(location);
+}
+
+
+
 
