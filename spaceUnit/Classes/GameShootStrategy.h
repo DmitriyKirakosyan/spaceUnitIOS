@@ -36,6 +36,7 @@ private:
     
     void shootBullet();
     void checkBulletsForRemove();
+    void checkBulletsHit();
 };
 
 #endif /* defined(__spaceUnit__GameShootStrategy__) */

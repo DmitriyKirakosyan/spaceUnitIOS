@@ -31,6 +31,7 @@ void GameShootStrategy::tick()
         }
     }
     this->checkBulletsForRemove();
+    this->checkBulletsHit();
     
     if (arc4random() % 30 == 23) { this->createEnemy(); }
     if (_enemies != NULL)
@@ -95,6 +96,49 @@ void GameShootStrategy::checkBulletsForRemove()
         }
     }
 }
+
+void GameShootStrategy::checkBulletsHit()
+{
+    CCArray* enemiesForExplosion = CCArray::create();
+    CCArray* bulletsForRemove = CCArray::create();
+    float distance;
+    float enemyRadius;
+    CCPoint enemyPosition;
+    
+    CCObject* bulletItem;
+    CCARRAY_FOREACH(_bullets, bulletItem)
+    {
+        for (int i = 0; i < _enemies->count(); ++i) {
+                enemyRadius = ((CCSprite*) _enemies->objectAtIndex(i))->getContentSize().height/2 *
+                ((CCSprite*) _enemies->objectAtIndex(i))->getScale();
+                enemyPosition = ((CCSprite*) _enemies->objectAtIndex(i))->getPosition();
+                
+                distance = ccpDistance(enemyPosition, ((CCSprite*) bulletItem)->getPosition());
+                if (distance < enemyRadius)
+                {
+                    enemiesForExplosion->addObject(_enemies->objectAtIndex(i));
+                    bulletsForRemove->addObject(bulletItem);
+                }
+        }
+    }
+    
+    CCObject* item;
+    CCARRAY_FOREACH(enemiesForExplosion, item)
+    {
+        GameStrategy::explodeEnemy((CCSprite*) item);
+    }
+    enemiesForExplosion->removeAllObjects();
+    
+    bulletItem = NULL;
+    CCARRAY_FOREACH(bulletsForRemove, bulletItem)
+    {
+        _screenContainer->removeChild((CCSprite*) bulletItem, false);
+        _bullets->removeObject(bulletItem);
+    }
+    bulletsForRemove->removeAllObjects();
+}
+
+
 
 void GameShootStrategy::createEnemy()
 {

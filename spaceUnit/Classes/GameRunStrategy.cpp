@@ -80,7 +80,7 @@ void GameRunStrategy::checkEnemyHits()
     CCObject* item;
     CCARRAY_FOREACH(enemiesForExplosion, item)
     {
-        this->explodeEnemy((CCSprite*) item);
+        GameStrategy::explodeEnemy((CCSprite*) item);
     }
 }
 
