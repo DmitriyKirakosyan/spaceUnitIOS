@@ -2246,9 +2246,9 @@ bool CCAnimate::initWithAnimation(CCAnimation *pAnimation)
 {
     CCAssert( pAnimation!=NULL, "Animate: argument Animation must be non-NULL");
 
-    float singleDuration = pAnimation->getDuration();
+    float singleDuration = 0.1;//pAnimation->getDuration();
 
-    if ( CCActionInterval::initWithDuration(singleDuration * pAnimation->getLoops() ) ) 
+    if ( CCActionInterval::initWithDuration(singleDuration * 1/*pAnimation->getLoops()*/ ) )
     {
         m_nNextFrame = 0;
         setAnimation(pAnimation);

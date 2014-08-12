@@ -7,6 +7,73 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181B9F9F1997109A00931437 /* Shooter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 181B9F9E1997109A00931437 /* Shooter.cpp */; };
+		1860476D1998C6ED004B8569 /* scorepad.png in Resources */ = {isa = PBXBuildFile; fileRef = 1860476C1998C6ED004B8569 /* scorepad.png */; };
+		186047701998DBBF004B8569 /* Button.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1860476E1998DBBF004B8569 /* Button.cpp */; };
+		1870898B1993B0D900AE77F5 /* blow0.png in Resources */ = {isa = PBXBuildFile; fileRef = 1870898A1993B0D900AE77F5 /* blow0.png */; };
+		188A7CAC199937A600C3B6C1 /* bam2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 188A7CA5199937A600C3B6C1 /* bam2.wav */; };
+		188A7CAD199937A600C3B6C1 /* bam6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 188A7CA6199937A600C3B6C1 /* bam6.mp3 */; };
+		188A7CAE199937A600C3B6C1 /* click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 188A7CA7199937A600C3B6C1 /* click.mp3 */; };
+		188A7CAF199937A600C3B6C1 /* gameplay.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 188A7CA8199937A600C3B6C1 /* gameplay.mp3 */; };
+		188A7CB0199937A600C3B6C1 /* mainmenu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 188A7CA9199937A600C3B6C1 /* mainmenu.mp3 */; };
+		188A7CB1199937A600C3B6C1 /* shot.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 188A7CAA199937A600C3B6C1 /* shot.mp3 */; };
+		188A7CB2199937A600C3B6C1 /* unlockAchieve.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 188A7CAB199937A600C3B6C1 /* unlockAchieve.mp3 */; };
+		188B4C691997882E00B185A7 /* blow_circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 188B4C681997882E00B185A7 /* blow_circle.png */; };
+		188B95061991CF2B00B7CD0C /* textures.png in Resources */ = {isa = PBXBuildFile; fileRef = 188B95051991CF2B00B7CD0C /* textures.png */; };
+		188C360519994BBB0073054A /* quitBtn_Down.png in Resources */ = {isa = PBXBuildFile; fileRef = 188C360319994BBB0073054A /* quitBtn_Down.png */; };
+		188C360619994BBB0073054A /* quitBtn_Up.png in Resources */ = {isa = PBXBuildFile; fileRef = 188C360419994BBB0073054A /* quitBtn_Up.png */; };
+		188C69F619921595000B72FA /* aboutBtn_Down.png in Resources */ = {isa = PBXBuildFile; fileRef = 188C69E519921595000B72FA /* aboutBtn_Down.png */; };
+		188C69F719921595000B72FA /* aboutBtn_Up.png in Resources */ = {isa = PBXBuildFile; fileRef = 188C69E619921595000B72FA /* aboutBtn_Up.png */; };
+		188C69F819921595000B72FA /* achieveBtn_Down.png in Resources */ = {isa = PBXBuildFile; fileRef = 188C69E719921595000B72FA /* achieveBtn_Down.png */; };
+		188C69F919921595000B72FA /* achieveBtn_Up.png in Resources */ = {isa = PBXBuildFile; fileRef = 188C69E819921595000B72FA /* achieveBtn_Up.png */; };
+		188C69FA19921595000B72FA /* backBtn_Down.png in Resources */ = {isa = PBXBuildFile; fileRef = 188C69E919921595000B72FA /* backBtn_Down.png */; };
+		188C69FB19921595000B72FA /* backBtn_Up.png in Resources */ = {isa = PBXBuildFile; fileRef = 188C69EA19921595000B72FA /* backBtn_Up.png */; };
+		188C69FC19921595000B72FA /* firstscreen_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 188C69EB19921595000B72FA /* firstscreen_back.png */; };
+		188C69FD19921595000B72FA /* runBtn_Down.png in Resources */ = {isa = PBXBuildFile; fileRef = 188C69EC19921595000B72FA /* runBtn_Down.png */; };
+		188C69FE19921595000B72FA /* runBtn_Up.png in Resources */ = {isa = PBXBuildFile; fileRef = 188C69ED19921595000B72FA /* runBtn_Up.png */; };
+		188C69FF19921595000B72FA /* scoreBtn_Down.png in Resources */ = {isa = PBXBuildFile; fileRef = 188C69EE19921595000B72FA /* scoreBtn_Down.png */; };
+		188C6A0019921595000B72FA /* scoreBtn_Up.png in Resources */ = {isa = PBXBuildFile; fileRef = 188C69EF19921595000B72FA /* scoreBtn_Up.png */; };
+		188C6A0119921595000B72FA /* shootBtn_Down.png in Resources */ = {isa = PBXBuildFile; fileRef = 188C69F019921595000B72FA /* shootBtn_Down.png */; };
+		188C6A0219921595000B72FA /* shootBtn_Up.png in Resources */ = {isa = PBXBuildFile; fileRef = 188C69F119921595000B72FA /* shootBtn_Up.png */; };
+		188C6A0319921595000B72FA /* soundBtn_Off.png in Resources */ = {isa = PBXBuildFile; fileRef = 188C69F219921595000B72FA /* soundBtn_Off.png */; };
+		188C6A0419921595000B72FA /* soundBtn_On.png in Resources */ = {isa = PBXBuildFile; fileRef = 188C69F319921595000B72FA /* soundBtn_On.png */; };
+		188C6A0519921595000B72FA /* stopBtn_Down.png in Resources */ = {isa = PBXBuildFile; fileRef = 188C69F419921595000B72FA /* stopBtn_Down.png */; };
+		188C6A0619921595000B72FA /* stopBtn_Up.png in Resources */ = {isa = PBXBuildFile; fileRef = 188C69F519921595000B72FA /* stopBtn_Up.png */; };
+		188D76171994670200A30991 /* Enemy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 188D76161994670200A30991 /* Enemy.cpp */; };
+		188FE81F1998FF6000EEB65B /* AbilityButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 188FE81D1998FF6000EEB65B /* AbilityButton.cpp */; };
+		1891D1B219989E1B007DF8D6 /* blowCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 1891D1AC19989E1B007DF8D6 /* blowCircle.png */; };
+		1891D1B319989E1B007DF8D6 /* frameCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 1891D1AD19989E1B007DF8D6 /* frameCircle.png */; };
+		1891D1B419989E1B007DF8D6 /* multigunCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 1891D1AE19989E1B007DF8D6 /* multigunCircle.png */; };
+		1891D1B519989E1B007DF8D6 /* redCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 1891D1AF19989E1B007DF8D6 /* redCircle.png */; };
+		1891D1B619989E1B007DF8D6 /* spaceunit.png in Resources */ = {isa = PBXBuildFile; fileRef = 1891D1B019989E1B007DF8D6 /* spaceunit.png */; };
+		1891D1B719989E1B007DF8D6 /* textures7.png in Resources */ = {isa = PBXBuildFile; fileRef = 1891D1B119989E1B007DF8D6 /* textures7.png */; };
+		1891D1BA1998B045007DF8D6 /* CCLabelChange.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1891D1B81998B045007DF8D6 /* CCLabelChange.cpp */; };
+		18932CC119950497009A809A /* Assets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18932CBF19950497009A809A /* Assets.cpp */; };
+		18932CD919950781009A809A /* mine_passive.png in Resources */ = {isa = PBXBuildFile; fileRef = 18932CD219950781009A809A /* mine_passive.png */; };
+		18932CDA19950781009A809A /* mine_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 18932CD319950781009A809A /* mine_active.png */; };
+		18932CDB19950781009A809A /* meteor.png in Resources */ = {isa = PBXBuildFile; fileRef = 18932CD419950781009A809A /* meteor.png */; };
+		18932CDC19950781009A809A /* asteroid.png in Resources */ = {isa = PBXBuildFile; fileRef = 18932CD519950781009A809A /* asteroid.png */; };
+		18932CDD19950781009A809A /* alien_passive.png in Resources */ = {isa = PBXBuildFile; fileRef = 18932CD619950781009A809A /* alien_passive.png */; };
+		18932CDE19950781009A809A /* alien_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 18932CD719950781009A809A /* alien_active.png */; };
+		18932CDF19950781009A809A /* redgun.png in Resources */ = {isa = PBXBuildFile; fileRef = 18932CD819950781009A809A /* redgun.png */; };
+		18932CEB199523C2009A809A /* Ability.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18932CE9199523C2009A809A /* Ability.cpp */; };
+		189511081993903B00065C09 /* ShipView1.png in Resources */ = {isa = PBXBuildFile; fileRef = 189511071993903B00065C09 /* ShipView1.png */; };
+		1895F6B7199334FB00A19E42 /* blow1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1895F6B0199334FB00A19E42 /* blow1.png */; };
+		1895F6B8199334FB00A19E42 /* blow2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1895F6B1199334FB00A19E42 /* blow2.png */; };
+		1895F6B9199334FB00A19E42 /* blow3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1895F6B2199334FB00A19E42 /* blow3.png */; };
+		1895F6BA199334FB00A19E42 /* blow4.png in Resources */ = {isa = PBXBuildFile; fileRef = 1895F6B3199334FB00A19E42 /* blow4.png */; };
+		1895F6BB199334FB00A19E42 /* blow5.png in Resources */ = {isa = PBXBuildFile; fileRef = 1895F6B4199334FB00A19E42 /* blow5.png */; };
+		1895F6BC199334FB00A19E42 /* blow6.png in Resources */ = {isa = PBXBuildFile; fileRef = 1895F6B5199334FB00A19E42 /* blow6.png */; };
+		1895F6BD199334FB00A19E42 /* blow7.png in Resources */ = {isa = PBXBuildFile; fileRef = 1895F6B6199334FB00A19E42 /* blow7.png */; };
+		189A4BB319966312008D8782 /* EnemyFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 189A4BB219966312008D8782 /* EnemyFactory.cpp */; };
+		18AC9F6D1996327000B1C990 /* ship.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC9F671996327000B1C990 /* ship.png */; };
+		18AC9F6E1996327000B1C990 /* ship1.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC9F681996327000B1C990 /* ship1.png */; };
+		18AC9F6F1996327000B1C990 /* ship2.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC9F691996327000B1C990 /* ship2.png */; };
+		18AC9F701996327000B1C990 /* ship3.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC9F6A1996327000B1C990 /* ship3.png */; };
+		18AC9F711996327000B1C990 /* ship_gun.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC9F6B1996327000B1C990 /* ship_gun.png */; };
+		18AC9F721996327000B1C990 /* ship_multigun.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC9F6C1996327000B1C990 /* ship_multigun.png */; };
+		18FA93E51998B66900EA2C2B /* score.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FA93E41998B66900EA2C2B /* score.png */; };
+		18FA93E71998BAE100EA2C2B /* Score.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 18FA93E61998BAE100EA2C2B /* Score.cpp */; };
 		2C78EB1A168A10E200CFA337 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C78EB19168A10E200CFA337 /* QuartzCore.framework */; };
 		2C78EB1C168A10E200CFA337 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C78EB1B168A10E200CFA337 /* OpenGLES.framework */; };
 		2C78EB1E168A10E200CFA337 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C78EB1D168A10E200CFA337 /* OpenAL.framework */; };
@@ -215,16 +282,134 @@
 		2C78EDDC168A134B00CFA337 /* Star_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C78EDCF168A134B00CFA337 /* Star_1.png */; };
 		2C78EDDD168A134B00CFA337 /* Star_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C78EDD0168A134B00CFA337 /* Star_2.png */; };
 		2C78EDDE168A134B00CFA337 /* Star_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C78EDD1168A134B00CFA337 /* Star_3.png */; };
-		2C78EDE8168F71D700CFA337 /* Enemy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C78EDE6168F71D700CFA337 /* Enemy.cpp */; };
 		2C78EDEB168FAB6600CFA337 /* SpaceObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C78EDEA168FAB6600CFA337 /* SpaceObject.cpp */; };
 		2C78EDEE16921B5500CFA337 /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C78EDEC16921B5400CFA337 /* GameScene.cpp */; };
-		2C78EDF51693B32C00CFA337 /* MovingSpaceObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C78EDF31693B32C00CFA337 /* MovingSpaceObject.cpp */; };
-		2C78EDF81693B4FB00CFA337 /* Ship.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C78EDF61693B4FA00CFA337 /* Ship.cpp */; };
 		2CA493871695E1B40066A57B /* GameRunStrategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CA493851695E1B40066A57B /* GameRunStrategy.cpp */; };
 		2CA4938A169CBA3E0066A57B /* GameShootStrategy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2CA49388169CBA3E0066A57B /* GameShootStrategy.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		181B9F9E1997109A00931437 /* Shooter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Shooter.cpp; path = Classes/Shooter.cpp; sourceTree = "<group>"; };
+		184C7A341996448900EFCDB3 /* RespawnFrequencyCollector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RespawnFrequencyCollector.h; path = Classes/RespawnFrequencyCollector.h; sourceTree = "<group>"; };
+		1860476C1998C6ED004B8569 /* scorepad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scorepad.png; sourceTree = "<group>"; };
+		1860476E1998DBBF004B8569 /* Button.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Button.cpp; path = Classes/Button.cpp; sourceTree = "<group>"; };
+		1860476F1998DBBF004B8569 /* Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Button.h; path = Classes/Button.h; sourceTree = "<group>"; };
+		1870898A1993B0D900AE77F5 /* blow0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blow0.png; sourceTree = "<group>"; };
+		187089901993B68100AE77F5 /* GameStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameStatus.h; path = Classes/GameStatus.h; sourceTree = "<group>"; };
+		187089A21993C0C400AE77F5 /* AEnemyBehaviour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AEnemyBehaviour.h; path = Classes/AEnemyBehaviour.h; sourceTree = "<group>"; };
+		187089A41993C0D200AE77F5 /* BehaviourOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BehaviourOptions.h; path = Classes/BehaviourOptions.h; sourceTree = "<group>"; };
+		187089A51993C0E600AE77F5 /* EnemyActivateBehaviour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EnemyActivateBehaviour.h; path = Classes/EnemyActivateBehaviour.h; sourceTree = "<group>"; };
+		187089A71993C10D00AE77F5 /* EBehaviourENUM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EBehaviourENUM.h; path = Classes/EBehaviourENUM.h; sourceTree = "<group>"; };
+		187089A81993C12000AE77F5 /* AEnemyBehaviourWithTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AEnemyBehaviourWithTarget.h; path = Classes/AEnemyBehaviourWithTarget.h; sourceTree = "<group>"; };
+		187089A91993C13A00AE77F5 /* AlarmBehaviourOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlarmBehaviourOptions.h; path = Classes/AlarmBehaviourOptions.h; sourceTree = "<group>"; };
+		187089AA1993C13A00AE77F5 /* CrazyMineBehaviourOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CrazyMineBehaviourOptions.h; path = Classes/CrazyMineBehaviourOptions.h; sourceTree = "<group>"; };
+		187089AB1993C13A00AE77F5 /* ShootBehaviourOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShootBehaviourOptions.h; path = Classes/ShootBehaviourOptions.h; sourceTree = "<group>"; };
+		187089AC1993C21700AE77F5 /* EnemyAlarmBehaviour.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EnemyAlarmBehaviour.h; path = Classes/EnemyAlarmBehaviour.h; sourceTree = "<group>"; };
+		187089AD1993C66500AE77F5 /* EnemyAlienBehaviour.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EnemyAlienBehaviour.h; path = Classes/EnemyAlienBehaviour.h; sourceTree = "<group>"; };
+		187089AE1993C70400AE77F5 /* EnemyBehaviourFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EnemyBehaviourFactory.h; path = Classes/EnemyBehaviourFactory.h; sourceTree = "<group>"; };
+		187089AF1993C73600AE77F5 /* EnemyCrazyMineBehaviour.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EnemyCrazyMineBehaviour.h; path = Classes/EnemyCrazyMineBehaviour.h; sourceTree = "<group>"; };
+		187089B11993C78000AE77F5 /* EnemyFollowBehaviour.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EnemyFollowBehaviour.h; path = Classes/EnemyFollowBehaviour.h; sourceTree = "<group>"; };
+		187089B21993C7C400AE77F5 /* EnemyShootBehaviour.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EnemyShootBehaviour.h; path = Classes/EnemyShootBehaviour.h; sourceTree = "<group>"; };
+		187089B31993C80600AE77F5 /* ActiveEnemy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ActiveEnemy.h; path = Classes/ActiveEnemy.h; sourceTree = "<group>"; };
+		187089B41993C82F00AE77F5 /* BehaviourOptionsData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BehaviourOptionsData.h; path = Classes/BehaviourOptionsData.h; sourceTree = "<group>"; };
+		187089B51993C84E00AE77F5 /* EnemyFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EnemyFactory.h; path = Classes/EnemyFactory.h; sourceTree = "<group>"; };
+		187089B61993C87D00AE77F5 /* EnemyTypeENUM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EnemyTypeENUM.h; path = Classes/EnemyTypeENUM.h; sourceTree = "<group>"; };
+		187089B91993C90100AE77F5 /* AGun.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AGun.h; path = Classes/AGun.h; sourceTree = "<group>"; };
+		187089BA1993C92700AE77F5 /* MultiGun.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MultiGun.h; path = Classes/MultiGun.h; sourceTree = "<group>"; };
+		187089BB1993C94B00AE77F5 /* SimpleGun.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SimpleGun.h; path = Classes/SimpleGun.h; sourceTree = "<group>"; };
+		187089BD1993C9AA00AE77F5 /* AbilityBlowImpact.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AbilityBlowImpact.h; path = Classes/AbilityBlowImpact.h; sourceTree = "<group>"; };
+		187089BE1993C9D200AE77F5 /* BlowImpact.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BlowImpact.h; path = Classes/BlowImpact.h; sourceTree = "<group>"; };
+		187089BF1993C9EA00AE77F5 /* IImpactMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IImpactMaker.h; path = Classes/IImpactMaker.h; sourceTree = "<group>"; };
+		187089C01993CA1000AE77F5 /* ImpactController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ImpactController.h; path = Classes/ImpactController.h; sourceTree = "<group>"; };
+		187089C11993CA3600AE77F5 /* ISpaceImpact.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ISpaceImpact.h; path = Classes/ISpaceImpact.h; sourceTree = "<group>"; };
+		187089C51993F1A100AE77F5 /* IShooter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IShooter.h; path = Classes/IShooter.h; sourceTree = "<group>"; };
+		187089C81993F30600AE77F5 /* IBlowMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IBlowMaker.h; path = Classes/IBlowMaker.h; sourceTree = "<group>"; };
+		188A7CA5199937A600C3B6C1 /* bam2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bam2.wav; sourceTree = "<group>"; };
+		188A7CA6199937A600C3B6C1 /* bam6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bam6.mp3; sourceTree = "<group>"; };
+		188A7CA7199937A600C3B6C1 /* click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = click.mp3; sourceTree = "<group>"; };
+		188A7CA8199937A600C3B6C1 /* gameplay.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameplay.mp3; sourceTree = "<group>"; };
+		188A7CA9199937A600C3B6C1 /* mainmenu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mainmenu.mp3; sourceTree = "<group>"; };
+		188A7CAA199937A600C3B6C1 /* shot.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shot.mp3; sourceTree = "<group>"; };
+		188A7CAB199937A600C3B6C1 /* unlockAchieve.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = unlockAchieve.mp3; sourceTree = "<group>"; };
+		188B4C681997882E00B185A7 /* blow_circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blow_circle.png; sourceTree = "<group>"; };
+		188B95051991CF2B00B7CD0C /* textures.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = textures.png; sourceTree = "<group>"; };
+		188C360319994BBB0073054A /* quitBtn_Down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quitBtn_Down.png; sourceTree = "<group>"; };
+		188C360419994BBB0073054A /* quitBtn_Up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quitBtn_Up.png; sourceTree = "<group>"; };
+		188C69E519921595000B72FA /* aboutBtn_Down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aboutBtn_Down.png; sourceTree = "<group>"; };
+		188C69E619921595000B72FA /* aboutBtn_Up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aboutBtn_Up.png; sourceTree = "<group>"; };
+		188C69E719921595000B72FA /* achieveBtn_Down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = achieveBtn_Down.png; sourceTree = "<group>"; };
+		188C69E819921595000B72FA /* achieveBtn_Up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = achieveBtn_Up.png; sourceTree = "<group>"; };
+		188C69E919921595000B72FA /* backBtn_Down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backBtn_Down.png; sourceTree = "<group>"; };
+		188C69EA19921595000B72FA /* backBtn_Up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backBtn_Up.png; sourceTree = "<group>"; };
+		188C69EB19921595000B72FA /* firstscreen_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = firstscreen_back.png; sourceTree = "<group>"; };
+		188C69EC19921595000B72FA /* runBtn_Down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runBtn_Down.png; sourceTree = "<group>"; };
+		188C69ED19921595000B72FA /* runBtn_Up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runBtn_Up.png; sourceTree = "<group>"; };
+		188C69EE19921595000B72FA /* scoreBtn_Down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scoreBtn_Down.png; sourceTree = "<group>"; };
+		188C69EF19921595000B72FA /* scoreBtn_Up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scoreBtn_Up.png; sourceTree = "<group>"; };
+		188C69F019921595000B72FA /* shootBtn_Down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shootBtn_Down.png; sourceTree = "<group>"; };
+		188C69F119921595000B72FA /* shootBtn_Up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shootBtn_Up.png; sourceTree = "<group>"; };
+		188C69F219921595000B72FA /* soundBtn_Off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = soundBtn_Off.png; sourceTree = "<group>"; };
+		188C69F319921595000B72FA /* soundBtn_On.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = soundBtn_On.png; sourceTree = "<group>"; };
+		188C69F419921595000B72FA /* stopBtn_Down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stopBtn_Down.png; sourceTree = "<group>"; };
+		188C69F519921595000B72FA /* stopBtn_Up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stopBtn_Up.png; sourceTree = "<group>"; };
+		188C83801996794200D58D9C /* RotationSpeedCollector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RotationSpeedCollector.h; path = Classes/RotationSpeedCollector.h; sourceTree = "<group>"; };
+		188D76151994625700A30991 /* BorderBehaviorENUM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BorderBehaviorENUM.h; path = Classes/BorderBehaviorENUM.h; sourceTree = "<group>"; };
+		188D76161994670200A30991 /* Enemy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Enemy.cpp; path = Classes/Enemy.cpp; sourceTree = "<group>"; };
+		188D7618199477A900A30991 /* BlowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BlowController.h; path = Classes/BlowController.h; sourceTree = "<group>"; };
+		188D761919947A9D00A30991 /* BlowAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BlowAnimation.h; path = Classes/BlowAnimation.h; sourceTree = "<group>"; };
+		188DD3581994A6FA000136AA /* AsteroidsBehavior.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AsteroidsBehavior.h; path = Classes/AsteroidsBehavior.h; sourceTree = "<group>"; };
+		188DD3591994ABD9000136AA /* SpeedCollector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SpeedCollector.h; path = Classes/SpeedCollector.h; sourceTree = "<group>"; };
+		188FE81D1998FF6000EEB65B /* AbilityButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AbilityButton.cpp; path = Classes/AbilityButton.cpp; sourceTree = "<group>"; };
+		188FE81E1998FF6000EEB65B /* AbilityButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AbilityButton.h; path = Classes/AbilityButton.h; sourceTree = "<group>"; };
+		188FE820199920EE00EEB65B /* BasicHeroSkin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BasicHeroSkin.h; path = Classes/BasicHeroSkin.h; sourceTree = "<group>"; };
+		188FE8211999211100EEB65B /* MultigunHeroSkin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MultigunHeroSkin.h; path = Classes/MultigunHeroSkin.h; sourceTree = "<group>"; };
+		189164BF1996F7EE00950096 /* Shooter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Shooter.h; path = Classes/Shooter.h; sourceTree = "<group>"; };
+		1891D1AC19989E1B007DF8D6 /* blowCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blowCircle.png; sourceTree = "<group>"; };
+		1891D1AD19989E1B007DF8D6 /* frameCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frameCircle.png; sourceTree = "<group>"; };
+		1891D1AE19989E1B007DF8D6 /* multigunCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = multigunCircle.png; sourceTree = "<group>"; };
+		1891D1AF19989E1B007DF8D6 /* redCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redCircle.png; sourceTree = "<group>"; };
+		1891D1B019989E1B007DF8D6 /* spaceunit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spaceunit.png; sourceTree = "<group>"; };
+		1891D1B119989E1B007DF8D6 /* textures7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = textures7.png; sourceTree = "<group>"; };
+		1891D1B81998B045007DF8D6 /* CCLabelChange.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCLabelChange.cpp; sourceTree = "<group>"; };
+		1891D1B91998B045007DF8D6 /* CCLabelChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLabelChange.h; sourceTree = "<group>"; };
+		18932CBF19950497009A809A /* Assets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Assets.cpp; sourceTree = "<group>"; };
+		18932CC019950497009A809A /* Assets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Assets.h; sourceTree = "<group>"; };
+		18932CD219950781009A809A /* mine_passive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mine_passive.png; sourceTree = "<group>"; };
+		18932CD319950781009A809A /* mine_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mine_active.png; sourceTree = "<group>"; };
+		18932CD419950781009A809A /* meteor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meteor.png; sourceTree = "<group>"; };
+		18932CD519950781009A809A /* asteroid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asteroid.png; sourceTree = "<group>"; };
+		18932CD619950781009A809A /* alien_passive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alien_passive.png; sourceTree = "<group>"; };
+		18932CD719950781009A809A /* alien_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alien_active.png; sourceTree = "<group>"; };
+		18932CD819950781009A809A /* redgun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redgun.png; sourceTree = "<group>"; };
+		18932CE019950C13009A809A /* IGameStrategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IGameStrategy.h; path = Classes/IGameStrategy.h; sourceTree = "<group>"; };
+		18932CE219950E1F009A809A /* Score.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Score.h; path = Classes/Score.h; sourceTree = "<group>"; };
+		18932CE319951047009A809A /* ScoreView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ScoreView.h; path = Classes/ScoreView.h; sourceTree = "<group>"; };
+		18932CE61995174A009A809A /* AbilityENUM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AbilityENUM.h; path = Classes/AbilityENUM.h; sourceTree = "<group>"; };
+		18932CE9199523C2009A809A /* Ability.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Ability.cpp; path = Classes/Ability.cpp; sourceTree = "<group>"; };
+		18932CEA199523C2009A809A /* Ability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Ability.h; path = Classes/Ability.h; sourceTree = "<group>"; };
+		18932CEC19952480009A809A /* BlowAbility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BlowAbility.h; path = Classes/BlowAbility.h; sourceTree = "<group>"; };
+		18932CEE1995259D009A809A /* MultigunAbility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MultigunAbility.h; path = Classes/MultigunAbility.h; sourceTree = "<group>"; };
+		18932CEF1995280A009A809A /* HeroSkin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HeroSkin.h; path = Classes/HeroSkin.h; sourceTree = "<group>"; };
+		189511071993903B00065C09 /* ShipView1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ShipView1.png; path = Resources/ShipView1.png; sourceTree = "<group>"; };
+		1895F6B0199334FB00A19E42 /* blow1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blow1.png; sourceTree = "<group>"; };
+		1895F6B1199334FB00A19E42 /* blow2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blow2.png; sourceTree = "<group>"; };
+		1895F6B2199334FB00A19E42 /* blow3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blow3.png; sourceTree = "<group>"; };
+		1895F6B3199334FB00A19E42 /* blow4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blow4.png; sourceTree = "<group>"; };
+		1895F6B4199334FB00A19E42 /* blow5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blow5.png; sourceTree = "<group>"; };
+		1895F6B5199334FB00A19E42 /* blow6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blow6.png; sourceTree = "<group>"; };
+		1895F6B6199334FB00A19E42 /* blow7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blow7.png; sourceTree = "<group>"; };
+		189A4BB219966312008D8782 /* EnemyFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EnemyFactory.cpp; path = Classes/EnemyFactory.cpp; sourceTree = "<group>"; };
+		18AC9F6519961C8400B1C990 /* AnimatedSprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AnimatedSprite.h; path = Classes/AnimatedSprite.h; sourceTree = "<group>"; };
+		18AC9F671996327000B1C990 /* ship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ship.png; sourceTree = "<group>"; };
+		18AC9F681996327000B1C990 /* ship1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ship1.png; sourceTree = "<group>"; };
+		18AC9F691996327000B1C990 /* ship2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ship2.png; sourceTree = "<group>"; };
+		18AC9F6A1996327000B1C990 /* ship3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ship3.png; sourceTree = "<group>"; };
+		18AC9F6B1996327000B1C990 /* ship_gun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ship_gun.png; sourceTree = "<group>"; };
+		18AC9F6C1996327000B1C990 /* ship_multigun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ship_multigun.png; sourceTree = "<group>"; };
+		18AC9F74199639E700B1C990 /* GameStrategyFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameStrategyFactory.h; path = Classes/GameStrategyFactory.h; sourceTree = "<group>"; };
+		18AC9F7519963D4300B1C990 /* EnemySetCollector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EnemySetCollector.h; path = Classes/EnemySetCollector.h; sourceTree = "<group>"; };
+		18FA93E41998B66900EA2C2B /* score.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = score.png; sourceTree = "<group>"; };
+		18FA93E61998BAE100EA2C2B /* Score.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Score.cpp; path = Classes/Score.cpp; sourceTree = "<group>"; };
 		2C541E2B16C55CD200182A39 /* Bullet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Bullet.h; path = Classes/Bullet.h; sourceTree = "<group>"; };
 		2C78EB15168A10E200CFA337 /* spaceUnit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = spaceUnit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C78EB19168A10E200CFA337 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -668,15 +853,12 @@
 		2C78EDCF168A134B00CFA337 /* Star_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Star_1.png; path = Resources/Star_1.png; sourceTree = "<group>"; };
 		2C78EDD0168A134B00CFA337 /* Star_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Star_2.png; path = Resources/Star_2.png; sourceTree = "<group>"; };
 		2C78EDD1168A134B00CFA337 /* Star_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Star_3.png; path = Resources/Star_3.png; sourceTree = "<group>"; };
-		2C78EDE6168F71D700CFA337 /* Enemy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Enemy.cpp; path = Classes/Enemy.cpp; sourceTree = "<group>"; };
 		2C78EDE7168F71D700CFA337 /* Enemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Enemy.h; path = Classes/Enemy.h; sourceTree = "<group>"; };
 		2C78EDE9168F8CB500CFA337 /* SpaceObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SpaceObject.h; path = Classes/SpaceObject.h; sourceTree = "<group>"; };
 		2C78EDEA168FAB6600CFA337 /* SpaceObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SpaceObject.cpp; path = Classes/SpaceObject.cpp; sourceTree = "<group>"; };
 		2C78EDEC16921B5400CFA337 /* GameScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameScene.cpp; path = Classes/GameScene.cpp; sourceTree = "<group>"; };
 		2C78EDED16921B5400CFA337 /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameScene.h; path = Classes/GameScene.h; sourceTree = "<group>"; };
-		2C78EDF31693B32C00CFA337 /* MovingSpaceObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MovingSpaceObject.cpp; path = Classes/MovingSpaceObject.cpp; sourceTree = "<group>"; };
 		2C78EDF41693B32C00CFA337 /* MovingSpaceObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MovingSpaceObject.h; path = Classes/MovingSpaceObject.h; sourceTree = "<group>"; };
-		2C78EDF61693B4FA00CFA337 /* Ship.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Ship.cpp; path = Classes/Ship.cpp; sourceTree = "<group>"; };
 		2C78EDF71693B4FB00CFA337 /* Ship.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Ship.h; path = Classes/Ship.h; sourceTree = "<group>"; };
 		2CA493841695D6BB0066A57B /* GameStrategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GameStrategy.h; path = Classes/GameStrategy.h; sourceTree = "<group>"; };
 		2CA493851695E1B40066A57B /* GameRunStrategy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameRunStrategy.cpp; path = Classes/GameRunStrategy.cpp; sourceTree = "<group>"; };
@@ -705,6 +887,284 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		187089931993B77C00AE77F5 /* enemy */ = {
+			isa = PBXGroup;
+			children = (
+				188D76161994670200A30991 /* Enemy.cpp */,
+				187089941993B79300AE77F5 /* behaviour */,
+				2C78EDE7168F71D700CFA337 /* Enemy.h */,
+				187089B31993C80600AE77F5 /* ActiveEnemy.h */,
+				187089B41993C82F00AE77F5 /* BehaviourOptionsData.h */,
+				187089B51993C84E00AE77F5 /* EnemyFactory.h */,
+				187089B61993C87D00AE77F5 /* EnemyTypeENUM.h */,
+				189A4BB219966312008D8782 /* EnemyFactory.cpp */,
+			);
+			name = enemy;
+			sourceTree = "<group>";
+		};
+		187089941993B79300AE77F5 /* behaviour */ = {
+			isa = PBXGroup;
+			children = (
+				187089A51993C0E600AE77F5 /* EnemyActivateBehaviour.h */,
+				187089A81993C12000AE77F5 /* AEnemyBehaviourWithTarget.h */,
+				187089A71993C10D00AE77F5 /* EBehaviourENUM.h */,
+				187089961993B7C200AE77F5 /* options */,
+				187089951993B7BC00AE77F5 /* core */,
+				187089AC1993C21700AE77F5 /* EnemyAlarmBehaviour.h */,
+				187089AD1993C66500AE77F5 /* EnemyAlienBehaviour.h */,
+				187089AE1993C70400AE77F5 /* EnemyBehaviourFactory.h */,
+				187089AF1993C73600AE77F5 /* EnemyCrazyMineBehaviour.h */,
+				187089B11993C78000AE77F5 /* EnemyFollowBehaviour.h */,
+				187089B21993C7C400AE77F5 /* EnemyShootBehaviour.h */,
+			);
+			name = behaviour;
+			sourceTree = "<group>";
+		};
+		187089951993B7BC00AE77F5 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				187089A41993C0D200AE77F5 /* BehaviourOptions.h */,
+				187089A21993C0C400AE77F5 /* AEnemyBehaviour.h */,
+			);
+			name = core;
+			sourceTree = "<group>";
+		};
+		187089961993B7C200AE77F5 /* options */ = {
+			isa = PBXGroup;
+			children = (
+				187089A91993C13A00AE77F5 /* AlarmBehaviourOptions.h */,
+				187089AA1993C13A00AE77F5 /* CrazyMineBehaviourOptions.h */,
+				187089AB1993C13A00AE77F5 /* ShootBehaviourOptions.h */,
+			);
+			name = options;
+			sourceTree = "<group>";
+		};
+		187089B71993C8A900AE77F5 /* hero */ = {
+			isa = PBXGroup;
+			children = (
+				2C78EDF71693B4FB00CFA337 /* Ship.h */,
+				18932CEF1995280A009A809A /* HeroSkin.h */,
+				188FE820199920EE00EEB65B /* BasicHeroSkin.h */,
+				188FE8211999211100EEB65B /* MultigunHeroSkin.h */,
+			);
+			name = hero;
+			sourceTree = "<group>";
+		};
+		187089B81993C8ED00AE77F5 /* gun */ = {
+			isa = PBXGroup;
+			children = (
+				187089B91993C90100AE77F5 /* AGun.h */,
+				187089BA1993C92700AE77F5 /* MultiGun.h */,
+				187089BB1993C94B00AE77F5 /* SimpleGun.h */,
+			);
+			name = gun;
+			sourceTree = "<group>";
+		};
+		187089BC1993C98E00AE77F5 /* impact */ = {
+			isa = PBXGroup;
+			children = (
+				187089BD1993C9AA00AE77F5 /* AbilityBlowImpact.h */,
+				187089BE1993C9D200AE77F5 /* BlowImpact.h */,
+				187089BF1993C9EA00AE77F5 /* IImpactMaker.h */,
+				187089C01993CA1000AE77F5 /* ImpactController.h */,
+				187089C11993CA3600AE77F5 /* ISpaceImpact.h */,
+			);
+			name = impact;
+			sourceTree = "<group>";
+		};
+		187089C41993F16A00AE77F5 /* balance */ = {
+			isa = PBXGroup;
+			children = (
+				188DD3591994ABD9000136AA /* SpeedCollector.h */,
+				18AC9F7519963D4300B1C990 /* EnemySetCollector.h */,
+				184C7A341996448900EFCDB3 /* RespawnFrequencyCollector.h */,
+				188C83801996794200D58D9C /* RotationSpeedCollector.h */,
+			);
+			name = balance;
+			sourceTree = "<group>";
+		};
+		187089C61993F2B700AE77F5 /* animation */ = {
+			isa = PBXGroup;
+			children = (
+				187089C81993F30600AE77F5 /* IBlowMaker.h */,
+				188D7618199477A900A30991 /* BlowController.h */,
+				188D761919947A9D00A30991 /* BlowAnimation.h */,
+			);
+			name = animation;
+			sourceTree = "<group>";
+		};
+		188A7CA4199937A600C3B6C1 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				188A7CA5199937A600C3B6C1 /* bam2.wav */,
+				188A7CA6199937A600C3B6C1 /* bam6.mp3 */,
+				188A7CA7199937A600C3B6C1 /* click.mp3 */,
+				188A7CA8199937A600C3B6C1 /* gameplay.mp3 */,
+				188A7CA9199937A600C3B6C1 /* mainmenu.mp3 */,
+				188A7CAA199937A600C3B6C1 /* shot.mp3 */,
+				188A7CAB199937A600C3B6C1 /* unlockAchieve.mp3 */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
+		188A7CB3199937AA00C3B6C1 /* menu */ = {
+			isa = PBXGroup;
+			children = (
+				188C360319994BBB0073054A /* quitBtn_Down.png */,
+				188C360419994BBB0073054A /* quitBtn_Up.png */,
+				18FA93E41998B66900EA2C2B /* score.png */,
+				188C69E519921595000B72FA /* aboutBtn_Down.png */,
+				188C69E619921595000B72FA /* aboutBtn_Up.png */,
+				188C69E719921595000B72FA /* achieveBtn_Down.png */,
+				188C69E819921595000B72FA /* achieveBtn_Up.png */,
+				188C69E919921595000B72FA /* backBtn_Down.png */,
+				188C69EA19921595000B72FA /* backBtn_Up.png */,
+				188C69EB19921595000B72FA /* firstscreen_back.png */,
+				188C69EC19921595000B72FA /* runBtn_Down.png */,
+				188C69ED19921595000B72FA /* runBtn_Up.png */,
+				188C69EE19921595000B72FA /* scoreBtn_Down.png */,
+				188C69EF19921595000B72FA /* scoreBtn_Up.png */,
+				188C69F019921595000B72FA /* shootBtn_Down.png */,
+				188C69F119921595000B72FA /* shootBtn_Up.png */,
+				188C69F219921595000B72FA /* soundBtn_Off.png */,
+				188C69F319921595000B72FA /* soundBtn_On.png */,
+				188C69F419921595000B72FA /* stopBtn_Down.png */,
+				188C69F519921595000B72FA /* stopBtn_Up.png */,
+			);
+			name = menu;
+			sourceTree = "<group>";
+		};
+		188C69E419921595000B72FA /* res */ = {
+			isa = PBXGroup;
+			children = (
+				188A7CB3199937AA00C3B6C1 /* menu */,
+				188A7CA4199937A600C3B6C1 /* sounds */,
+				1891D1AB19989E1B007DF8D6 /* other */,
+				18AC9F661996327000B1C990 /* ship */,
+				18932CD119950781009A809A /* satellites */,
+				1895F6AF199334FB00A19E42 /* blow */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		188DD3561994A6D3000136AA /* menu */ = {
+			isa = PBXGroup;
+			children = (
+				1891D1B81998B045007DF8D6 /* CCLabelChange.cpp */,
+				1891D1B91998B045007DF8D6 /* CCLabelChange.h */,
+				188DD3571994A6E0000136AA /* behavior */,
+				2C78EDB9168A10E600CFA337 /* MainScene.h */,
+				2C78EDBA168A10E600CFA337 /* MainScene.cpp */,
+			);
+			name = menu;
+			sourceTree = "<group>";
+		};
+		188DD3571994A6E0000136AA /* behavior */ = {
+			isa = PBXGroup;
+			children = (
+				188DD3581994A6FA000136AA /* AsteroidsBehavior.h */,
+			);
+			name = behavior;
+			sourceTree = "<group>";
+		};
+		1891D1AB19989E1B007DF8D6 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				1860476C1998C6ED004B8569 /* scorepad.png */,
+				1891D1AC19989E1B007DF8D6 /* blowCircle.png */,
+				1891D1AD19989E1B007DF8D6 /* frameCircle.png */,
+				1891D1AE19989E1B007DF8D6 /* multigunCircle.png */,
+				1891D1AF19989E1B007DF8D6 /* redCircle.png */,
+				1891D1B019989E1B007DF8D6 /* spaceunit.png */,
+				1891D1B119989E1B007DF8D6 /* textures7.png */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		18932CBE1995047B009A809A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				18932CBF19950497009A809A /* Assets.cpp */,
+				18932CC019950497009A809A /* Assets.h */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		18932CD119950781009A809A /* satellites */ = {
+			isa = PBXGroup;
+			children = (
+				18932CD219950781009A809A /* mine_passive.png */,
+				18932CD319950781009A809A /* mine_active.png */,
+				18932CD419950781009A809A /* meteor.png */,
+				18932CD519950781009A809A /* asteroid.png */,
+				18932CD619950781009A809A /* alien_passive.png */,
+				18932CD719950781009A809A /* alien_active.png */,
+				18932CD819950781009A809A /* redgun.png */,
+			);
+			path = satellites;
+			sourceTree = "<group>";
+		};
+		18932CE119950E01009A809A /* score */ = {
+			isa = PBXGroup;
+			children = (
+				18932CE219950E1F009A809A /* Score.h */,
+				18932CE319951047009A809A /* ScoreView.h */,
+				18FA93E61998BAE100EA2C2B /* Score.cpp */,
+			);
+			name = score;
+			sourceTree = "<group>";
+		};
+		18932CE419951705009A809A /* ability */ = {
+			isa = PBXGroup;
+			children = (
+				18932CEE1995259D009A809A /* MultigunAbility.h */,
+				18932CE61995174A009A809A /* AbilityENUM.h */,
+				18932CE9199523C2009A809A /* Ability.cpp */,
+				18932CEA199523C2009A809A /* Ability.h */,
+				18932CEC19952480009A809A /* BlowAbility.h */,
+			);
+			name = ability;
+			sourceTree = "<group>";
+		};
+		1895F6AF199334FB00A19E42 /* blow */ = {
+			isa = PBXGroup;
+			children = (
+				188B4C681997882E00B185A7 /* blow_circle.png */,
+				1870898A1993B0D900AE77F5 /* blow0.png */,
+				1895F6B0199334FB00A19E42 /* blow1.png */,
+				1895F6B1199334FB00A19E42 /* blow2.png */,
+				1895F6B2199334FB00A19E42 /* blow3.png */,
+				1895F6B3199334FB00A19E42 /* blow4.png */,
+				1895F6B4199334FB00A19E42 /* blow5.png */,
+				1895F6B5199334FB00A19E42 /* blow6.png */,
+				1895F6B6199334FB00A19E42 /* blow7.png */,
+			);
+			path = blow;
+			sourceTree = "<group>";
+		};
+		18AC9F6419961C5D00B1C990 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				18AC9F6519961C8400B1C990 /* AnimatedSprite.h */,
+				1860476E1998DBBF004B8569 /* Button.cpp */,
+				1860476F1998DBBF004B8569 /* Button.h */,
+			);
+			name = core;
+			sourceTree = "<group>";
+		};
+		18AC9F661996327000B1C990 /* ship */ = {
+			isa = PBXGroup;
+			children = (
+				18AC9F671996327000B1C990 /* ship.png */,
+				18AC9F681996327000B1C990 /* ship1.png */,
+				18AC9F691996327000B1C990 /* ship2.png */,
+				18AC9F6A1996327000B1C990 /* ship3.png */,
+				18AC9F6B1996327000B1C990 /* ship_gun.png */,
+				18AC9F6C1996327000B1C990 /* ship_multigun.png */,
+			);
+			path = ship;
+			sourceTree = "<group>";
+		};
 		2C78EB0A168A10E200CFA337 = {
 			isa = PBXGroup;
 			children = (
@@ -740,6 +1200,7 @@
 		2C78EB29168A10E200CFA337 /* spaceUnit */ = {
 			isa = PBXGroup;
 			children = (
+				188C69E419921595000B72FA /* res */,
 				2C78EB2A168A10E300CFA337 /* Resources */,
 				2C78EB42168A10E300CFA337 /* ios */,
 				2C78EB4B168A10E300CFA337 /* libs */,
@@ -752,6 +1213,8 @@
 		2C78EB2A168A10E300CFA337 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				189511071993903B00065C09 /* ShipView1.png */,
+				188B95051991CF2B00B7CD0C /* textures.png */,
 				2C78EDC5168A134B00CFA337 /* EnemyView_2.png */,
 				2C78EDC6168A134B00CFA337 /* EnemyView.png */,
 				2C78EDC7168A134B00CFA337 /* PlanetView.png */,
@@ -1577,11 +2040,12 @@
 		2C78EDB5168A10E600CFA337 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				18AC9F6419961C5D00B1C990 /* core */,
+				18932CBE1995047B009A809A /* Assets */,
+				188DD3561994A6D3000136AA /* menu */,
 				2C78EDE4168F71B700CFA337 /* game */,
 				2C78EDB6168A10E600CFA337 /* AppDelegate.h */,
 				2C78EDB7168A10E600CFA337 /* AppDelegate.cpp */,
-				2C78EDB9168A10E600CFA337 /* MainScene.h */,
-				2C78EDBA168A10E600CFA337 /* MainScene.cpp */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -1589,10 +2053,19 @@
 		2C78EDE4168F71B700CFA337 /* game */ = {
 			isa = PBXGroup;
 			children = (
+				18932CE419951705009A809A /* ability */,
+				18932CE119950E01009A809A /* score */,
+				187089C61993F2B700AE77F5 /* animation */,
+				187089C51993F1A100AE77F5 /* IShooter.h */,
+				187089C41993F16A00AE77F5 /* balance */,
 				2CA493821695D69E0066A57B /* strategy */,
 				2C78EDE5168F71BD00CFA337 /* mapObjects */,
 				2C78EDEC16921B5400CFA337 /* GameScene.cpp */,
 				2C78EDED16921B5400CFA337 /* GameScene.h */,
+				189164BF1996F7EE00950096 /* Shooter.h */,
+				181B9F9E1997109A00931437 /* Shooter.cpp */,
+				188FE81D1998FF6000EEB65B /* AbilityButton.cpp */,
+				188FE81E1998FF6000EEB65B /* AbilityButton.h */,
 			);
 			name = game;
 			sourceTree = "<group>";
@@ -1600,15 +2073,15 @@
 		2C78EDE5168F71BD00CFA337 /* mapObjects */ = {
 			isa = PBXGroup;
 			children = (
-				2C78EDE6168F71D700CFA337 /* Enemy.cpp */,
-				2C78EDE7168F71D700CFA337 /* Enemy.h */,
+				187089BC1993C98E00AE77F5 /* impact */,
+				187089B81993C8ED00AE77F5 /* gun */,
+				187089B71993C8A900AE77F5 /* hero */,
+				187089931993B77C00AE77F5 /* enemy */,
 				2C78EDE9168F8CB500CFA337 /* SpaceObject.h */,
 				2C78EDEA168FAB6600CFA337 /* SpaceObject.cpp */,
-				2C78EDF31693B32C00CFA337 /* MovingSpaceObject.cpp */,
 				2C78EDF41693B32C00CFA337 /* MovingSpaceObject.h */,
-				2C78EDF61693B4FA00CFA337 /* Ship.cpp */,
-				2C78EDF71693B4FB00CFA337 /* Ship.h */,
 				2C541E2B16C55CD200182A39 /* Bullet.h */,
+				188D76151994625700A30991 /* BorderBehaviorENUM.h */,
 			);
 			name = mapObjects;
 			sourceTree = "<group>";
@@ -1616,11 +2089,14 @@
 		2CA493821695D69E0066A57B /* strategy */ = {
 			isa = PBXGroup;
 			children = (
+				18AC9F74199639E700B1C990 /* GameStrategyFactory.h */,
+				187089901993B68100AE77F5 /* GameStatus.h */,
 				2CA493841695D6BB0066A57B /* GameStrategy.h */,
 				2CA493851695E1B40066A57B /* GameRunStrategy.cpp */,
 				2CA493861695E1B40066A57B /* GameRunStrategy.h */,
 				2CA49388169CBA3E0066A57B /* GameShootStrategy.cpp */,
 				2CA49389169CBA3E0066A57B /* GameShootStrategy.h */,
+				18932CE019950C13009A809A /* IGameStrategy.h */,
 			);
 			name = strategy;
 			sourceTree = "<group>";
@@ -1676,29 +2152,87 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C78EB2C168A10E300CFA337 /* CloseNormal.png in Resources */,
+				1891D1B619989E1B007DF8D6 /* spaceunit.png in Resources */,
 				2C78EB2E168A10E300CFA337 /* CloseSelected.png in Resources */,
+				18AC9F721996327000B1C990 /* ship_multigun.png in Resources */,
+				188C6A0319921595000B72FA /* soundBtn_Off.png in Resources */,
 				2C78EB30168A10E300CFA337 /* Default.png in Resources */,
+				1860476D1998C6ED004B8569 /* scorepad.png in Resources */,
 				2C78EB32168A10E300CFA337 /* HelloWorld.png in Resources */,
+				1895F6BB199334FB00A19E42 /* blow5.png in Resources */,
+				188C69FC19921595000B72FA /* firstscreen_back.png in Resources */,
+				1891D1B419989E1B007DF8D6 /* multigunCircle.png in Resources */,
 				2C78EB34168A10E300CFA337 /* Icon-72.png in Resources */,
+				1895F6B9199334FB00A19E42 /* blow3.png in Resources */,
+				18932CDC19950781009A809A /* asteroid.png in Resources */,
+				188C69FD19921595000B72FA /* runBtn_Down.png in Resources */,
+				18AC9F6D1996327000B1C990 /* ship.png in Resources */,
+				189511081993903B00065C09 /* ShipView1.png in Resources */,
 				2C78EB36168A10E300CFA337 /* Icon-Small-50.png in Resources */,
 				2C78EB38168A10E300CFA337 /* Icon-Small.png in Resources */,
+				18FA93E51998B66900EA2C2B /* score.png in Resources */,
+				188C69F919921595000B72FA /* achieveBtn_Up.png in Resources */,
+				188C360619994BBB0073054A /* quitBtn_Up.png in Resources */,
 				2C78EB3A168A10E300CFA337 /* Icon-Small@2x.png in Resources */,
+				1895F6BA199334FB00A19E42 /* blow4.png in Resources */,
+				188C69FF19921595000B72FA /* scoreBtn_Down.png in Resources */,
 				2C78EB3C168A10E300CFA337 /* Icon.png in Resources */,
+				188C6A0419921595000B72FA /* soundBtn_On.png in Resources */,
+				188A7CAF199937A600C3B6C1 /* gameplay.mp3 in Resources */,
 				2C78EB3E168A10E300CFA337 /* Icon@2x.png in Resources */,
+				1870898B1993B0D900AE77F5 /* blow0.png in Resources */,
+				188C69FA19921595000B72FA /* backBtn_Down.png in Resources */,
+				1895F6B7199334FB00A19E42 /* blow1.png in Resources */,
 				2C78EB40168A10E300CFA337 /* iTunesArtwork in Resources */,
+				1891D1B319989E1B007DF8D6 /* frameCircle.png in Resources */,
 				2C78EBD2168A10E300CFA337 /* ChangeLog in Resources */,
+				18932CD919950781009A809A /* mine_passive.png in Resources */,
+				18AC9F711996327000B1C990 /* ship_gun.png in Resources */,
+				188A7CB1199937A600C3B6C1 /* shot.mp3 in Resources */,
+				188A7CAE199937A600C3B6C1 /* click.mp3 in Resources */,
+				1895F6BD199334FB00A19E42 /* blow7.png in Resources */,
+				188A7CAD199937A600C3B6C1 /* bam6.mp3 in Resources */,
+				188C69F619921595000B72FA /* aboutBtn_Down.png in Resources */,
+				1891D1B719989E1B007DF8D6 /* textures7.png in Resources */,
+				188A7CB0199937A600C3B6C1 /* mainmenu.mp3 in Resources */,
+				1891D1B219989E1B007DF8D6 /* blowCircle.png in Resources */,
+				188C69F719921595000B72FA /* aboutBtn_Up.png in Resources */,
+				188B4C691997882E00B185A7 /* blow_circle.png in Resources */,
+				188C6A0619921595000B72FA /* stopBtn_Up.png in Resources */,
+				18932CDA19950781009A809A /* mine_active.png in Resources */,
 				2C78EDD2168A134B00CFA337 /* EnemyView_2.png in Resources */,
 				2C78EDD3168A134B00CFA337 /* EnemyView.png in Resources */,
+				188C6A0019921595000B72FA /* scoreBtn_Up.png in Resources */,
 				2C78EDD4168A134B00CFA337 /* PlanetView.png in Resources */,
+				18AC9F701996327000B1C990 /* ship3.png in Resources */,
+				188B95061991CF2B00B7CD0C /* textures.png in Resources */,
+				188C6A0519921595000B72FA /* stopBtn_Down.png in Resources */,
+				188C360519994BBB0073054A /* quitBtn_Down.png in Resources */,
 				2C78EDD5168A134B00CFA337 /* PlayBtnRun_1.png in Resources */,
+				18932CDE19950781009A809A /* alien_active.png in Resources */,
+				18AC9F6E1996327000B1C990 /* ship1.png in Resources */,
+				1895F6BC199334FB00A19E42 /* blow6.png in Resources */,
 				2C78EDD6168A134B00CFA337 /* PlayBtnRun_2.png in Resources */,
+				18932CDD19950781009A809A /* alien_passive.png in Resources */,
+				188C69FE19921595000B72FA /* runBtn_Up.png in Resources */,
+				1891D1B519989E1B007DF8D6 /* redCircle.png in Resources */,
 				2C78EDD7168A134B00CFA337 /* PlayBtnShoot_1.png in Resources */,
+				188C6A0119921595000B72FA /* shootBtn_Down.png in Resources */,
+				188A7CAC199937A600C3B6C1 /* bam2.wav in Resources */,
+				18AC9F6F1996327000B1C990 /* ship2.png in Resources */,
 				2C78EDD8168A134B00CFA337 /* PlayBtnShoot_2.png in Resources */,
+				18932CDF19950781009A809A /* redgun.png in Resources */,
 				2C78EDD9168A134B00CFA337 /* SaturnView.png in Resources */,
 				2C78EDDA168A134B00CFA337 /* ShipView.png in Resources */,
+				188C69FB19921595000B72FA /* backBtn_Up.png in Resources */,
+				1895F6B8199334FB00A19E42 /* blow2.png in Resources */,
+				18932CDB19950781009A809A /* meteor.png in Resources */,
+				188A7CB2199937A600C3B6C1 /* unlockAchieve.mp3 in Resources */,
+				188C69F819921595000B72FA /* achieveBtn_Down.png in Resources */,
 				2C78EDDB168A134B00CFA337 /* SimpleBulletView.png in Resources */,
 				2C78EDDC168A134B00CFA337 /* Star_1.png in Resources */,
 				2C78EDDD168A134B00CFA337 /* Star_2.png in Resources */,
+				188C6A0219921595000B72FA /* shootBtn_Up.png in Resources */,
 				2C78EDDE168A134B00CFA337 /* Star_3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1722,6 +2256,7 @@
 				2C78EB61168A10E300CFA337 /* CCActionInstant.cpp in Sources */,
 				2C78EB64168A10E300CFA337 /* CCActionInterval.cpp in Sources */,
 				2C78EB67168A10E300CFA337 /* CCActionManager.cpp in Sources */,
+				188D76171994670200A30991 /* Enemy.cpp in Sources */,
 				2C78EB6A168A10E300CFA337 /* CCActionPageTurn3D.cpp in Sources */,
 				2C78EB6D168A10E300CFA337 /* CCActionProgressTimer.cpp in Sources */,
 				2C78EB70168A10E300CFA337 /* CCActionTiledGrid.cpp in Sources */,
@@ -1807,6 +2342,7 @@
 				2C78ECA8168A10E400CFA337 /* CCSpriteFrameCache.cpp in Sources */,
 				2C78ECAC168A10E400CFA337 /* base64.cpp in Sources */,
 				2C78ECAF168A10E400CFA337 /* CCNotificationCenter.cpp in Sources */,
+				181B9F9F1997109A00931437 /* Shooter.cpp in Sources */,
 				2C78ECB2168A10E400CFA337 /* CCPointExtension.cpp in Sources */,
 				2C78ECB5168A10E400CFA337 /* CCProfiling.cpp in Sources */,
 				2C78ECB8168A10E400CFA337 /* CCUserDefault.cpp in Sources */,
@@ -1818,6 +2354,7 @@
 				2C78ECCF168A10E500CFA337 /* ioapi.cpp in Sources */,
 				2C78ECD2168A10E500CFA337 /* unzip.cpp in Sources */,
 				2C78ECD5168A10E500CFA337 /* ZipUtils.cpp in Sources */,
+				1891D1BA1998B045007DF8D6 /* CCLabelChange.cpp in Sources */,
 				2C78ECDA168A10E500CFA337 /* CCIMEDispatcher.cpp in Sources */,
 				2C78ECDD168A10E500CFA337 /* CCTextFieldTTF.cpp in Sources */,
 				2C78ECE1168A10E500CFA337 /* CCTexture2D.cpp in Sources */,
@@ -1825,11 +2362,14 @@
 				2C78ECE7168A10E500CFA337 /* CCTextureCache.cpp in Sources */,
 				2C78ECEA168A10E500CFA337 /* CCTexturePVR.cpp in Sources */,
 				2C78ECEE168A10E500CFA337 /* CCParallaxNode.cpp in Sources */,
+				18FA93E71998BAE100EA2C2B /* Score.cpp in Sources */,
 				2C78ECF1168A10E500CFA337 /* CCTileMapAtlas.cpp in Sources */,
+				188FE81F1998FF6000EEB65B /* AbilityButton.cpp in Sources */,
 				2C78ECF4168A10E500CFA337 /* CCTMXLayer.cpp in Sources */,
 				2C78ECF7168A10E500CFA337 /* CCTMXObjectGroup.cpp in Sources */,
 				2C78ECFA168A10E500CFA337 /* CCTMXTiledMap.cpp in Sources */,
 				2C78ECFD168A10E500CFA337 /* CCTMXXMLParser.cpp in Sources */,
+				189A4BB319966312008D8782 /* EnemyFactory.cpp in Sources */,
 				2C78ED01168A10E500CFA337 /* CCTouch.cpp in Sources */,
 				2C78ED05168A10E500CFA337 /* CCTouchDispatcher.cpp in Sources */,
 				2C78ED08168A10E500CFA337 /* CCTouchHandler.cpp in Sources */,
@@ -1847,6 +2387,7 @@
 				2C78ED35168A10E500CFA337 /* CCBValue.cpp in Sources */,
 				2C78ED38168A10E500CFA337 /* CCControlButtonLoader.cpp in Sources */,
 				2C78ED3B168A10E500CFA337 /* CCControlLoader.cpp in Sources */,
+				18932CEB199523C2009A809A /* Ability.cpp in Sources */,
 				2C78ED3E168A10E500CFA337 /* CCData.cpp in Sources */,
 				2C78ED41168A10E500CFA337 /* CCLabelBMFontLoader.cpp in Sources */,
 				2C78ED44168A10E500CFA337 /* CCLabelTTFLoader.cpp in Sources */,
@@ -1858,6 +2399,7 @@
 				2C78ED57168A10E500CFA337 /* CCNode+CCBRelativePositioning.cpp in Sources */,
 				2C78ED5A168A10E500CFA337 /* CCNodeLoader.cpp in Sources */,
 				2C78ED5D168A10E500CFA337 /* CCNodeLoaderLibrary.cpp in Sources */,
+				18932CC119950497009A809A /* Assets.cpp in Sources */,
 				2C78ED61168A10E500CFA337 /* CCParticleSystemQuadLoader.cpp in Sources */,
 				2C78ED64168A10E500CFA337 /* CCScale9SpriteLoader.cpp in Sources */,
 				2C78ED67168A10E500CFA337 /* CCScrollViewLoader.cpp in Sources */,
@@ -1884,13 +2426,11 @@
 				2C78EDAF168A10E600CFA337 /* HttpClient.cpp in Sources */,
 				2C78EDB8168A10E600CFA337 /* AppDelegate.cpp in Sources */,
 				2C78EDBB168A10E600CFA337 /* MainScene.cpp in Sources */,
-				2C78EDE8168F71D700CFA337 /* Enemy.cpp in Sources */,
 				2C78EDEB168FAB6600CFA337 /* SpaceObject.cpp in Sources */,
 				2C78EDEE16921B5500CFA337 /* GameScene.cpp in Sources */,
-				2C78EDF51693B32C00CFA337 /* MovingSpaceObject.cpp in Sources */,
-				2C78EDF81693B4FB00CFA337 /* Ship.cpp in Sources */,
 				2CA493871695E1B40066A57B /* GameRunStrategy.cpp in Sources */,
 				2CA4938A169CBA3E0066A57B /* GameShootStrategy.cpp in Sources */,
+				186047701998DBBF004B8569 /* Button.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1961,6 +2501,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1984,6 +2525,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = spaceUnit/Prefix.pch;

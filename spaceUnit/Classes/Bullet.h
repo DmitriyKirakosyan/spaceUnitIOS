@@ -10,29 +10,29 @@
 #define spaceUnit_Bullet_h
 
 #include "cocos2d.h"
+#include "MovingSpaceObject.h"
 
-class Bullet : public cocos2d::CCSprite
+class Bullet : public MovingSpaceObject
 {
-public:
-    Bullet(float speed, float xCoef, float yCoef)
-    {
-        _speed = speed;
-        _xCoef = xCoef;
-        _yCoef = yCoef;
-    }
-    
-    void move()
-    {
-        cocos2d::CCPoint position = this->getPosition();
-        position.x += _speed * _xCoef;
-        position.y += _speed * _yCoef;
-        this->setPosition(position);
-    }
-    
 private:
-    float _speed;
-    float _xCoef;
-    float _yCoef;
+    const char *_file;
+    SpaceObject *_owner;
+    
+public:
+    Bullet(const char *file, SpaceObject *owner)
+    : MovingSpaceObject(cocos2d::CCDirector::sharedDirector()->getWinSize(), file, false, NONE)
+    {
+        _file = file;
+        _owner = owner;
+    }
+    
+    Bullet(const char *file)
+    : MovingSpaceObject(cocos2d::CCDirector::sharedDirector()->getWinSize(), file, false, NONE) {
+        _file = file;
+        _owner = NULL;
+    }
+    
+    SpaceObject *getOwner() { return _owner;}
 };
 
 #endif

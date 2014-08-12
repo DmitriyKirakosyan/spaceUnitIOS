@@ -10,18 +10,16 @@
 #define __spaceUnit__GameScene__
 
 #include "cocos2d.h"
+#include "ScoreView.h"
+#include "Button.h"
+#include "AbilityButton.h"
 
 class Ship;
 class GameStrategy;
 
 class GameScene : public cocos2d::CCScene
 {
-public:
-    static const int SHOOT_GAME;
-    static const int RUN_GAME;
-    
-    static const int MAX_TIME_ENEMY_RESPAWN;
-    
+public:    
     static GameScene* create(const int gameType);
 
 };
@@ -34,10 +32,13 @@ public:
     
     virtual bool init();
     void createShip();
+    ScoreView *getScoreView() {return _scoreView; }
     
     virtual void update(float dt);
     
     void onCloseBtnClick(cocos2d::CCNode* node);
+    void menuCloseCallback(CCNode* node);
+    void drawGameOver();
     
 private:    
     void ccTouchesBegan(cocos2d::CCSet* touches, cocos2d::CCEvent* event);
@@ -48,9 +49,11 @@ private:
     int _gameType;
     
     Ship* _ship;
-    
+    ScoreView *_scoreView;
     GameStrategy* _gameStrategy;
-    
+    Button *_pauseButton;
+    CCMenuItemImage *_quitItem;
+    AbilityButton *_abilityButton;
 };
 
 #endif /* defined(__spaceUnit__GameScene__) */

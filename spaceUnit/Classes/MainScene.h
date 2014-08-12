@@ -2,6 +2,7 @@
 #define __HELLOWORLD_SCENE_H__
 
 #include "cocos2d.h"
+#include "AsteroidsBehavior.h"
 
 class Main : public cocos2d::CCLayerColor
 {
@@ -12,17 +13,21 @@ public:
     // there's no 'id' in cpp, so we recommend to return the class instance pointer
     static cocos2d::CCScene* scene();
     
+    AsteroidsBehavior *_behavior;
+    cocos2d::CCSpriteBatchNode *spriteBatch;
+    
 private:
     
-    void update(cocos2d::CCTime dt);
-    
-    void createBackObjecs();
+    void initMenuItems();
+    void update(float dt);
     
     // a selector callback
     void menuCloseCallback(CCObject* pSender);
+    void menuSoundCallback(CCObject* pSender);
     
     void onPlayBtnRunClick(CCObject* pSender);
     void onPlayBtnShootClick(CCObject* pSender);
+    
     
     cocos2d::CCArray* _staticObjects;
     cocos2d::CCArray* _movingObjects;

@@ -5,7 +5,7 @@
 //  Created by Dmitriy on 12/29/12.
 //
 //
-
+/*
 #include "Enemy.h"
 
 using namespace cocos2d;
@@ -27,6 +27,7 @@ void Enemy::simpleMove()
     position.x += _speedX;
     position.y += _speedY;
     this->setPosition(position);
+    
     this->setRotation(this->getRotation() + _speedRotate);
     if (_teleportOnBoarder) {
         this->checkBoarderTeleport();
@@ -35,7 +36,7 @@ void Enemy::simpleMove()
 
 void Enemy::setRandomLook()
 {
-    this->initWithFile(dynamicImgs[arc4random() % getSizeImgArray()]);
+    this->initWithFile(dynamicImgs[	() % getSizeImgArray()]);
 }
 
 void Enemy::setRandomBehaviour()
@@ -45,33 +46,10 @@ void Enemy::setRandomBehaviour()
     
     this->setSpeedX(speedX);
     this->setSpeedY(speedY);
-    //this->setSpeedRotate(((arc4random() % 100) / 100) * 360);
+    this->setSpeedRotate(((arc4random() % 100) / 100.0f) * 10);
 }
 
-void Enemy::setRandomBorderPosition()
-{
-    int randomInt;
-    float randomX, randomY;
-    
-    if (arc4random() % 2 == 1)
-    {
-        randomInt = arc4random() % (int)(_screenSize.width * 2 - 1);
-        randomX = (int) (randomInt / _screenSize.width) * _screenSize.width;
-        randomY = arc4random() % (int)_screenSize.height;
-    }
-    else
-    {
-        randomX = arc4random() % (int)_screenSize.width;
-        randomInt = arc4random() % (int)(_screenSize.height * 2 - 1);
-        randomY = (int) (randomInt / _screenSize.height) * _screenSize.height;
-    }
-    if (randomX == 0) { randomX = -this->getContentSize().width/2; }
-    if (randomX == _screenSize.width) { randomX += this->getContentSize().width/2; }
-    if (randomY == 0) { randomY = -this->getContentSize().height/2; }
-    if (randomY == _screenSize.height) { randomY += this->getContentSize().height/2; }
 
-    this->setPosition(ccp(randomX, randomY));
-}
 
 void Enemy::checkBoarderTeleport()
 {
@@ -84,3 +62,7 @@ void Enemy::checkBoarderTeleport()
         this->setRandomBorderPosition();
     }
 }
+
+void Enemy::removeAllBehaviours() {
+    
+}*/

@@ -280,6 +280,8 @@ static bool _initWithString(const char * pText, cocos2d::CCImage::ETextAlign eAl
             break;
         }
         
+        
+        
         CGContextSetRGBFillColor(context, 1, 1, 1, 1);
         CGContextTranslateCTM(context, 0.0f, dim.height);
         CGContextScaleCTM(context, 1.0f, -1.0f); //NOTE: NSString draws in UIKit referential i.e. renders upside-down compared to CGBitmapContext referential

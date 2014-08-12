@@ -10,77 +10,81 @@
 #include "GameStrategy.h"
 #include "Enemy.h"
 #include "Ship.h"
+#include "RotationSpeedCollector.h"
+#include "SpeedCollector.h"
+#include "GameScene.h"
 
 using namespace cocos2d;
 
-void GameRunStrategy::tick()
+void GameRunStrategy::tick(float dt)
 {
-    if (_ship->isMoving())
-    {
-        _ship->moveTo(_ship->getTargetPosition().x, _ship->getTargetPosition().y);
-        _ship->rotateTo(_ship->getTargetPosition().x, _ship->getTargetPosition().y);
+    if(this->getGameStatus() == IN_PROCESS) {
+        _score->score += dt * 1000;
+        char s[20];
+        _score->getPrintableScore(s);
+        ((GameLayer *)_screenContainer)->getScoreView()->setScore(s);
     }
+    GameStrategy::tick(dt);
+    _ability->tick(dt);
+    _ship->tick(dt);
     
-    if (arc4random() % 30 == 23) { this->createEnemy(); }
-    if (_enemies != NULL)
-    {
-        CCObject* item;
-        CCARRAY_FOREACH(_enemies, item)
-        {
-            ((Enemy*) item)->moveTo(_ship->getPosition().x, _ship->getPosition().y);
-        }
-    }
     if (_enemies != NULL)
     {
         this->checkEnemyHits();
-    }    
-}
-
-void GameRunStrategy::createEnemy()
-{
-    if (_enemies == NULL)
-    {
-        _enemies = new CCArray();
+        this->checkHeroHit();
     }
-    Enemy* enemy = new Enemy(CCDirector::sharedDirector()->getWinSize());
-    enemy->setRandomBorderPosition();
-    enemy->setRandomGeneralSpeed();
-    enemy->setRandomLook();
-    _enemies->addObject(enemy);
-    _screenContainer->addChild(enemy);
 }
 
+void GameRunStrategy::setEnemyParams(Enemy *enemy) {
+    enemy->setRandomBorderPosition();
+    enemy->setRotationSpeed(RotationSpeedCollector::getEnemyRotation());
+    enemy->setGeneralSpeed(SpeedCollector::getEnemySpeed(enemy->getEnemyType(), RUN_GAME));
+    enemy->setTarget(_ship);
+}
+
+void GameRunStrategy::checkHeroHit() {
+    Enemy *enemyToExplode = NULL;
+    for (int i = 0; i < _enemies->count(); ++i) {
+        SpaceObject *object = (SpaceObject *)_enemies->objectAtIndex(i);
+        if (checkObjectsHit(object, _ship))
+        {
+            enemyToExplode = (Enemy*)_enemies->objectAtIndex(i);
+            gameOver();
+            break;
+        }
+    }
+    
+    if(enemyToExplode != NULL) {
+       explodeEnemy(enemyToExplode);
+       explodeHero();
+    }
+}
+
+Score * GameRunStrategy::getScore() {
+    return _score;
+}
 
 
 void GameRunStrategy::checkEnemyHits()
 {
     CCArray* enemiesForExplosion = CCArray::create();
-    float distance;
-    float radius1, radius2;
-    CCPoint position1, position2;
+
     for (int i = 0; i < ((int)_enemies->count() - 1); ++i) {
         for (int j = i + 1; j < _enemies->count(); ++j) {
-            radius1 = ((CCSprite*) _enemies->objectAtIndex(i))->getContentSize().height/2 *
-            ((CCSprite*) _enemies->objectAtIndex(i))->getScale();
-            radius2 = ((CCSprite*) _enemies->objectAtIndex(j))->getContentSize().height/2 *
-            ((CCSprite*) _enemies->objectAtIndex(j))->getScale();
-            position1 = ((CCSprite*) _enemies->objectAtIndex(i))->getPosition();
-            position2 = ((CCSprite*) _enemies->objectAtIndex(j))->getPosition();
+            SpaceObject *object1 = (SpaceObject *)_enemies->objectAtIndex(i);
+            SpaceObject *object2 = (SpaceObject *)_enemies->objectAtIndex(j);
             
-            distance = ccpDistance(position1, position2);
-            if (distance < radius1 + radius2)
-            {
-                
-                enemiesForExplosion->addObject((CCSprite*) _enemies->objectAtIndex(i));
-                enemiesForExplosion->addObject((CCSprite*) _enemies->objectAtIndex(j));
+            if (checkObjectsHit(object1, object2)) {
+                enemiesForExplosion->addObject(object1);
+                enemiesForExplosion->addObject(object2);
             }
         }
     }
     
-    CCObject* item;
-    CCARRAY_FOREACH(enemiesForExplosion, item)
+    CCObject* enemy;
+    CCARRAY_FOREACH(enemiesForExplosion, enemy)
     {
-        GameStrategy::explodeEnemy((CCSprite*) item);
+        explodeEnemy((Enemy *)enemy);
     }
 }
 
@@ -92,7 +96,8 @@ void GameRunStrategy::touchesBegan(CCSet* touches, CCEvent* event)
     CCPoint location = _movingTouch->getLocationInView();
     location = CCDirector::sharedDirector()->convertToGL(location);
     _ship->setTargetPosition(location);
-    _ship->setMoving(true);
+    _ship->moveTo(location.x, location.y);
+    _ship->rotateTo(location.x, location.y);
 }
 
 void GameRunStrategy::touchesEnded(CCSet* touches, CCEvent* event)
@@ -106,14 +111,24 @@ void GameRunStrategy::touchesEnded(CCSet* touches, CCEvent* event)
             _movingTouch = _prevMovingTouch;
         }
     }
-    _ship->setMoving(_movingTouch != NULL);
+    //_ship->setMoving(_movingTouch != NULL);
+}
+
+void GameRunStrategy::useAbility() {
+    if (!_ability->isReady()) {
+        //throw new Error("ability not ready for use");
+    }
+    _ability->activate();
 }
 
 void GameRunStrategy::touchesMoved(CCSet* touches, CCEvent* event)
 {
+    if(_movingTouch == NULL) return;
     CCPoint location = _movingTouch->getLocationInView();
     location = CCDirector::sharedDirector()->convertToGL(location);
     _ship->setTargetPosition(location);
+    _ship->moveTo(location.x, location.y);
+    _ship->rotateTo(location.x, location.y);
 }
 
 
