@@ -4,6 +4,7 @@
 #include "BorderBehaviorENUM.h"
 #include "EnemyFactory.h"
 #include "GameStatus.h"
+#include "CreditScreen.h"
 
 using namespace cocos2d;
 using namespace CocosDenshion;
@@ -37,13 +38,19 @@ bool Main::init()
         return false;
     }
     
-    CCSize winSize = CCDirector::sharedDirector()->getWinSize();
+    _winSize = CCDirector::sharedDirector()->getWinSize();
     
-    spriteBatch = new CCSpriteBatchNode();
+    /*CCSpriteFrameCache::sharedSpriteFrameCache()->addSpriteFramesWithFile("other.plist");
+    CCSpriteFrameCache::sharedSpriteFrameCache()->addSpriteFramesWithFile("satellites.plist");
+    CCSpriteFrameCache::sharedSpriteFrameCache()->addSpriteFramesWithFile("ship.plist");
+    CCSpriteFrameCache::sharedSpriteFrameCache()->addSpriteFramesWithFile("blow.plist");
+    CCSpriteFrameCache::sharedSpriteFrameCache()->addSpriteFramesWithFile("btn.plist");
     
+    CCSprite *backSprite = CCSprite::createWithSpriteFrameName("firstscreen_back.png");*/
+
     CCSprite *backSprite = CCSprite::create("firstscreen_back.png");
-    backSprite->setPosition(ccp(winSize.width / 2, winSize.height / 2));
-    backSprite->setScale(1.3f);
+    backSprite->setPosition(ccp(_winSize.width / 2, _winSize.height / 2));
+    backSprite->setScale(1.5f);
     this->addChild(backSprite);
     
     this->initMenuItems();
@@ -59,7 +66,7 @@ void Main::initMenuItems() {
     
     CCSize winSize = CCDirector::sharedDirector()->getWinSize();
     
-    _behavior = new AsteroidsBehavior(15, spriteBatch);
+    _behavior = new AsteroidsBehavior(15);
     std::list<MovingSpaceObject *> *spaceObjcets = _behavior->getSpaceObjects();
     std::list<MovingSpaceObject *>::iterator iter;
     for(iter = spaceObjcets->begin(); iter != spaceObjcets->end(); iter++) {
@@ -110,7 +117,7 @@ void Main::initMenuItems() {
                                                            "aboutBtn_Up.png",
                                                            "aboutBtn_Down.png",
                                                            this,
-                                                           menu_selector(Main::menuSoundCallback) );
+                                                           menu_selector(Main::menuAboutClick) );
     pAboutBtn->setAnchorPoint(ccp(0.5, 0));
     pAboutBtn->setPosition( ccp(winSize.width / 2 , 50));
     
@@ -136,7 +143,11 @@ void Main::update(float dt)
     _behavior->tick(dt);
 }
 
-
+void Main::menuAboutClick(CCObject* pSender) {
+    SimpleAudioEngine::sharedEngine()->playEffect("click.mp3", false);
+    CCScene* scene = CreditScreen::scene();
+    CCDirector::sharedDirector()->replaceScene(scene);
+}
 
 void Main::menuSoundCallback(CCObject* pSender)
 {

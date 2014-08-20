@@ -9,7 +9,7 @@
 #include "Assets.h"
 
 const char * Assets::soImages[2] = {"asteroid.png", "meteor.png"};
-const char * Assets::ship = "ShipView.png";
+const char * Assets::ship = "ship.png";
 const char * Assets::alienPassive = "alien_passive.png";
 const char * Assets::alienActive = "alien_active.png";
 const char * Assets::minePassive = "mine_passive.png";

@@ -4,6 +4,8 @@
 #include "cocos2d.h"
 #include "AsteroidsBehavior.h"
 
+USING_NS_CC;
+
 class Main : public cocos2d::CCLayerColor
 {
 public:
@@ -14,7 +16,6 @@ public:
     static cocos2d::CCScene* scene();
     
     AsteroidsBehavior *_behavior;
-    cocos2d::CCSpriteBatchNode *spriteBatch;
     
 private:
     
@@ -27,6 +28,7 @@ private:
     
     void onPlayBtnRunClick(CCObject* pSender);
     void onPlayBtnShootClick(CCObject* pSender);
+    void menuAboutClick(CCObject* pSender);
     
     
     cocos2d::CCArray* _staticObjects;
@@ -38,6 +40,9 @@ private:
 
     // preprocessor macro for "static create()" constructor ( node() deprecated )
     CREATE_FUNC(Main);
+    
+private:
+    CCSize _winSize;
 };
 
 #endif // __HELLOWORLD_SCENE_H__

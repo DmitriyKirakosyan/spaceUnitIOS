@@ -34,6 +34,7 @@ public:
 				} else {
                     blow->_blowAnim->tick(dt);
                     blow->_target->initWithSpriteFrame(blow->_blowAnim->getCurrentSkin());
+                    //blow->_target->initWithFile("backBtn_Down.png");
 				}
                 
 			}

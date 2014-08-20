@@ -23,7 +23,7 @@ private:
 	BlowController *_blowControl;
     
 public:
-    AsteroidsBehavior(int numStartEnemies, cocos2d::CCSpriteBatchNode *spriteBatch) {
+    AsteroidsBehavior(int numStartEnemies) {
 		_numStartEnemies = numStartEnemies;
 		
 		_blowControl = new BlowController();
@@ -45,16 +45,33 @@ public:
 			spaceObject->tick(dt);
             
 		}
+
 		if (_blowControl->getBlows() != NULL) {
-			_blowControl->tick(dt);
-            
+            std::list<BlowAnimation *> *animationsForRemove = new std::list<BlowAnimation *>();
             std::list<BlowAnimation *>::iterator iter;
-            std::list<BlowAnimation *> *_blows = _blowControl->getBlows();
-			for (iter = _blows->begin(); iter != _blows->end(); iter++) {
-				BlowAnimation *blow = (BlowAnimation *)(*iter);
-                //blow->tick();
-				//blow->draw(_spriteBatch);
-			}
+            for (iter = _blowControl->getBlows()->begin(); iter != _blowControl->getBlows()->end(); iter++)
+            {
+                BlowAnimation * blow = (BlowAnimation *)(*iter);
+                if (blow->_blowAnim->isAnimationFinished())
+                {
+                    animationsForRemove->push_back(blow);
+                } else {
+                    blow->_blowAnim->tick(dt);
+                    blow->_target->initWithSpriteFrame(blow->_blowAnim->getCurrentSkin());
+                }
+            }
+            
+            for (iter = animationsForRemove->begin(); iter != animationsForRemove->end(); iter++)
+            {
+                BlowAnimation *blow = (BlowAnimation *)(*iter);
+                ((MovingSpaceObject *)blow->_target)->setRandomBorderPosition();
+                
+                const char *imageSkin = Assets::soImages[arc4random() % 2];
+                ((MovingSpaceObject *)blow->_target)->initWithFile(imageSkin);
+                _blowControl->getBlows()->remove(blow);
+                delete blow;
+            }
+            animationsForRemove->clear();
 		}
 	}
     
@@ -66,7 +83,7 @@ public:
 		_blowControl->makeBlow(spaceObject);
 		//Sprite image = new Sprite(Assets.soImages[Math.round((float)Math.random())]);
 		//spaceObject = this.createRandomSpaceObject(image);
-		spaceObject->setRandomBorderPosition();
+		//spaceObject->setRandomBorderPosition();
 	}
 	
 private:

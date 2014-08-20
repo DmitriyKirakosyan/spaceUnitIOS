@@ -47,7 +47,7 @@ bool GameLayer::init()
         
         CCSprite *backSprite = CCSprite::create("firstscreen_back.png");
         backSprite->setPosition(ccp(winSize.width / 2, winSize.height / 2));
-        backSprite->setScale(1.3f);
+        backSprite->setScale(1.5f);
         this->addChild(backSprite);
 
         this->createShip();
